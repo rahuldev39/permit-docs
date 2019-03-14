@@ -1,0 +1,63 @@
+.create-project-modal .modal-dialog {
+    margin-top: 100px;
+    max-width: 900px;
+}
+.modal-backdrop {
+
+    background-color: #0f0f44;
+}
+.modal-backdrop.show {
+    opacity: .82;
+}
+.modal-footer{
+  background-color: #dee3ec;
+  display: flex;
+  justify-content: space-between;
+}
+.search-project-content {
+    min-height: 400px;
+}
+.search-project-content .modal-icon{
+  margin-bottom: 22px
+}
+.search-project-content h4{
+font-size: 32px;
+font-weight: bold;
+line-height: 37px;
+margin-bottom: 25px;
+color: #121C4D;
+}
+.search-property-input{
+  max-width: 558px;
+  margin: 0 auto;
+}
+.search-property-input .form-control {
+    border: 2px solid rgba(18,28,77,0.5);
+    box-shadow: 0 5px 5px 0 rgba(18,28,77,0.1);
+    border-radius: 10px;
+    color: #121C4D;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.search-property-input .form-control::placeholder{
+  opacity: .5;
+  color: #121C4D;
+}
+.modal-body {
+    padding: 2rem;
+}
+.btn-back {
+    min-width: auto;
+    padding: 0px 10px;
+    color: rgba(18,28,77,0.5);
+    font-size: 18px;
+    line-height: 21px;
+}
+.modal-body .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    outline: none;
+}
