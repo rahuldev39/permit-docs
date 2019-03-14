@@ -1,0 +1,238 @@
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: #F7F7F7;
+}
+.bg-light {
+    background-color: #ffffff!important;
+    box-shadow: 0px 0px 7px #ececec40;
+    padding: 0px;
+    border-top: 5px solid #121C4D
+}
+.nav-link {
+    padding: 0px 16.3px !important;
+    line-height: 65px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #121C4D !important;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+  position: relative;
+}
+.navbar-light .navbar-nav .active>.nav-link::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #121C4D;
+  bottom: 0px;
+  left: 0px
+}
+.navbar-brand{
+  margin-right: 60px
+}
+.nav-link-btn {
+    background-color: #dee3ec;
+    line-height: 49px;
+    border-radius: 8px;
+}
+.nav-search {
+    border-left: 1px solid #BCC1CF;
+    height: 65px;
+    margin-left: 32px;
+    position: relative;
+}
+.nav-search .form-control {
+    border: 0px;
+    line-height: 65px;
+    height: 100%;
+    padding-left: 48px;
+    outline: none;
+    color: #121C4D;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-search .form-control::placeholder{
+  color: #121C4D;
+  opacity: .5
+}
+.nav-search .form-control:focus{
+  box-shadow: none
+}
+.nav-search .search-icon {
+    top: 0px;
+    left: 15px;
+    position: absolute;
+    height: 100%;
+    line-height: 65px;
+}
+.nav-search .search-icon img{
+
+}
+.nav-bar-right li{
+  border-left: 1px solid #BCC1CF;
+}
+.user-link {
+    min-width: 283px;
+    background-image: url(./../images/arrow-icon.png);
+    background-repeat: no-repeat;
+    background-position: right 26px;
+}
+.user-link img {
+    margin-right: 25px;
+}
+.container-fluid {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+.page-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #121C4D;
+    line-height: 37px;
+    margin-bottom: 0px;
+}
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0px 39px;
+    border-radius: 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #121C4D;
+    border-color:  #121C4D;
+}
+.video-container{
+  position: relative;
+  min-height: 408px;
+  background-color: #DEE3EC;
+}
+.play-btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-view {
+    border: 0px;
+    height: 100%;
+}
+.box-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px
+}
+.box-header h4{
+  font-size: 18px;
+  color: #121C4D;
+  line-height: 21px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.list-view {
+    padding: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    flex: 1
+}
+.list-view li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    margin-bottom: 20px
+}
+.list-view li .list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.list-view li .list-item span{
+  color: #121C4D;
+  margin-left: 15px
+}
+.list-view li .right-icon{
+
+}
+.list-view li.done .list-item span {
+    color: #8a8ea7;
+}
+.box-view  .card-body{
+  display: flex;
+  flex-direction: column;
+}
+.boxed-list-view{
+  padding: 0px;
+  list-style-type: none
+}
+.boxed-list-view li .list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.title{
+  margin-bottom: 25px
+}
+.title h4{
+  color: #121C4D;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+}
+.boxed-list-view{
+
+}
+.boxed-list-view li {
+    margin-bottom: 15px;
+}
+.right-btn .btn {
+    padding: 0px 15.5px;
+}
+.location a{
+  margin-right: 29px
+}
+.btn-light{
+  color: #121C4D;
+  font-size: 14px;
+  font-weight: bold;
+  	background-color: #DEE3EC;
+}
+.activity-text h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #121C4D;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+.activity-text span{
+font-size: 16px;
+font-weight: bold;
+color: rgba(18,28,77,0.5);
+}
+.spacer{
+  height: 50px
+}
+.activity-icon{
+  margin-right: 50px
+}
+.projects-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #121C4D;
+    margin-bottom: 0px;
+    margin: 16px 0px;
+}
