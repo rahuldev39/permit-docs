@@ -2,6 +2,9 @@ body{
   font-family: 'Raleway', sans-serif;
   background-color: #F7F7F7;
 }
+html,body{
+  height: 100%
+}
 .bg-light {
     background-color: #ffffff!important;
     box-shadow: 0px 0px 7px #ececec40;
@@ -15,10 +18,14 @@ body{
     font-weight: bold;
     color: #121C4D !important;
 }
-.navbar-light .navbar-nav .active>.nav-link{
+.navbar-light .navbar-nav .nav-item {
+  display: flex;
+    align-items: center;
+}
+.navbar-light .navbar-nav .active{
   position: relative;
 }
-.navbar-light .navbar-nav .active>.nav-link::after{
+.navbar-light .navbar-nav .active::after{
   content: "";
   position: absolute;
   height: 2px;
@@ -97,9 +104,9 @@ body{
     font-size: 14px;
     font-weight: 600;
     height: 50px;
-    padding: 0px 39px;
+    padding: 0px 20px;
     border-radius: 10px;
-    min-width: 200px
+    min-width: 200px;
 }
 .btn-primary {
     color: #fff;
@@ -146,11 +153,12 @@ body{
   font-weight: bold;
   line-height: 29px;
 }
-.btn-light{
-  color: #121C4D;
-  font-size: 14px;
-  font-weight: bold;
-  	background-color: #DEE3EC;
+.btn-light {
+    color: #121C4D;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #DEE3EC;
+    border-color: #dde3ec;
 }
 .spacer{
   height: 50px
@@ -171,6 +179,9 @@ body{
 }
 .form-control:focus{
     box-shadow: 0 5px 5px 0 rgba(18,28,77,0.1) !important;
+}
+.btn-small{
+  min-width: auto !important
 }
 @media (max-width:992px){
   .navbar-nav {

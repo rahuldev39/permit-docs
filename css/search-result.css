@@ -1,0 +1,213 @@
+.control-links{
+  margin-top: 20px;
+}
+.control-links a{
+  margin-right: 15px
+}
+.property-search-header-text p.address {
+    color: rgba(18,28,77,0.5);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.side-underlay {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+    width: 40%;
+    z-index: -1;
+}
+.property-info-container{
+  color: white
+}
+.property-info-container h4{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 37px;
+  margin-bottom: 20px
+}
+.property-info-container p{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+.loc-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    min-height: 325px;
+    display: flex;
+    align-items: flex-end;
+}
+.loc-thumb .thumb {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.loc-thumb .thumb img{
+  height: 100%
+}
+.loc-thumb .view-full {
+    position: relative;
+    padding: 10px
+}
+.main-content{
+  position: relative;
+}
+.list-panel-head{
+  border-radius: 5px 5px 0 0;
+  background-color: #121C4D;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5px
+}
+.list-panel-head h4{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 0px
+}
+.list-panel ul {
+    padding: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+.list-panel ul li {
+    padding: 17px 16px;
+    background-color: white;
+    margin-bottom: 1px;
+}
+.list-panel ul li label {
+    color: #121C4D;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 0px;
+    display: inline-block;
+    min-width: 45%;
+}
+.list-panel ul li span{
+  color: #121C4D;
+  font-size: 18px;
+  line-height: 21px;
+}
+.list-panel .list-panel-body {
+    box-shadow: 0px 18px 23px -7px #756a6a24;
+}
+.boxed-list-view li {
+    margin-bottom: 15px;
+}
+.right-btn .btn {
+    padding: 0px 15.5px;
+}
+.location a{
+  margin-right: 29px
+}
+.nearby-pro-list li .projects-text h4{
+  color: rgba(18,28,77,0.5);
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 0px
+}
+
+/* The container must be positioned relative: */
+.select-dropdown {
+  position: relative;
+}
+
+.select-dropdown select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+    border: 0px !important;
+    border-radius: 0px;
+    color: #ffffff !important;
+    font-weight: bold;
+    line-height: 39px;
+    padding: 0px 25px !important;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+.select-selected::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 4px;
+    width: 16px;
+    height: 9px;
+    background-image: url(./../images/arrow-down-white.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  transform:rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+    color: #121c4c;
+    padding: 6px 20px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgb(220, 227, 236) transparent;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    margin-top: 4px;
+    box-shadow: 0px 0px 2px #efefef;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgb(221, 227, 236);
+}
+.miles-from-property {
+    display: flex;
+    align-items: center
+}
+.miles-from-property .select-dropdown{
+  min-width: 92px;
+  margin-right: 20px
+}
+.miles-from-property h5{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 0px
+}
