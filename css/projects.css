@@ -1,0 +1,196 @@
+.control-list{
+  display: flex;
+  align-items: center;
+}
+/* The container must be positioned relative: */
+.select-dropdown {
+  position: relative;
+}
+
+.select-dropdown select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+    border: 2px solid #121C4D !important;
+    border-radius: 10px;
+    color: #121c4c !important;
+    font-weight: bold;
+    line-height: 46px;
+    padding: 0px 25px !important;
+    font-size: 14px
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 19px;
+    right: 15px;
+    width: 16px;
+    height: 9px;
+    background-image: url(./../images/arrow-dropdown.png);
+    background-repeat: no-repeat;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  transform:rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+    color: #121c4c;
+    padding: 6px 20px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgb(220, 227, 236) transparent;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    margin-top: 4px;
+    box-shadow: 0px 0px 2px #efefef;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgb(221, 227, 236);
+}
+.list-view {
+    padding: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    flex: 1
+}
+.list-view li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    margin-bottom: 20px
+}
+.list-view li .list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.list-view li .list-item span{
+  color: #121C4D;
+  margin-left: 15px
+}
+.boxed-list-view li {
+    margin-bottom: 15px;
+}
+.right-btn .btn {
+    padding: 0px 15.5px;
+}
+.location a{
+  margin-right: 29px
+}
+
+.projects-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #121C4D;
+    margin-bottom: 0px;
+    margin: 16px 0px;
+}
+
+.search-projects{
+  position: relative;
+  min-width: 325px;
+  margin-right: 25px
+}
+.search-projects .form-control {
+
+    padding-right: 45px;
+    padding-left: 20px;
+}
+
+.search-projects .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.select-dropdown{
+  min-width: 208px;
+  margin-right: 25px
+}
+.list-view.filter-list li .list-item span {
+    color: white;
+    margin-left: 15px;
+}
+.list-view.filter-list li.active .list-item span {
+  font-weight: bold;
+}
+.projects-text label {
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.projects-text label input[type="checkbox"]{
+  display: none;
+}
+.projects-text label input[type="checkbox"] + h4 {
+    position: relative;
+    padding-left: 44px;
+}
+.projects-text label input[type="checkbox"] + h4::after {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: -1px;
+    border-radius: 6px;
+}
+.projects-text label input[type="checkbox"]:checked + h4::after{
+  background-image: url(./../images/checkbox-check.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filter-bg{
+  background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+  max-height: 100vh
+}
+.page-header.projects-header{
+  padding-bottom: 25px
+}
+.filter-bg .box-header h4{
+  color: white;
+  font-weight: 600
+}
+
+@media (max-width:992px) {
+  .projects-header{
+    display: block;
+
+  }
+  .control-list {
+    flex-direction: column;
+}
+.search-projects {
+    min-width: 100%;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+.select-dropdown {
+    min-width: 100%;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+}
