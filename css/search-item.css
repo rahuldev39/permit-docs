@@ -75,7 +75,7 @@
     position: absolute;
     height: 100%;
     background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
-    width: 40%;
+    width: 43%;
     z-index: -1;
 }
 .main-content{
@@ -227,16 +227,23 @@
     color: white;
     font-weight: 600;
 }
+.project-option-container .box-header{
+  margin-bottom: 20px
+}
 .project-option-container .list-view li .list-item span {
     color: white;
     font-weight: 500;
 }
-.project-option-container .list-view li{
-  background-image: url(./../images/arrow-right-white2.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-
+.project-option-container .list-view li {
+    background-image: url(./../images/arrow-right-white2.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
 }
 .note-list-icon{
   margin-left: 50px
+}
+.notes-list-container.boxed-list-view .card-body{
+  padding-top: 1.66rem;
+  padding-bottom: 1.66rem
 }
