@@ -183,6 +183,44 @@ html,body{
 .btn-small{
   min-width: auto !important
 }
+.notification-dropdown {
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 0px;
+    border: 1px solid #121c4c;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.notification-dropdown::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background-image: url(./../images/dropdown-triangle.png);
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -10px;
+    top: -15px;
+}
+ul.notification-list{
+  padding: 0px;
+  list-style-type: none;
+}
+ul.notification-list li{
+  border-bottom: 2px solid #121c4c;
+}
+ul.notification-list li:last-child{
+  border-bottom: 0px
+}
+ul.notification-list li a{
+  text-decoration: none;
+}
+ul.notification-list li .list-item {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+}
 @media (max-width:992px){
   .navbar-nav {
     display: block;
@@ -202,5 +240,16 @@ html,body{
 .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
     padding-right: 32px;
     padding-left: 33px;
+}
+.notification-dropdown {
+    margin-left: 0px;
+    width: 100%;
+    border: 0px;
+}
+.notification-dropdown::before {
+    display: none;
+}
+.navbar-light .navbar-nav .nav-item{
+  display: block;
 }
 }
