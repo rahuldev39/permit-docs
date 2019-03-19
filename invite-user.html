@@ -451,7 +451,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade project-update-modal" id="project-update-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade invite-user-modal" id="invite-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
   <div class="modal-content">
 
@@ -462,16 +462,33 @@
 
       <div class="modal-body-inner no-footer text-center">
         <div class="modal-icon">
-          <img src="./images/project-update.png" alt="">
+          <img src="./images/invite-user.png" alt="">
         </div>
 
-        <h4>Project Updated </h4>
-        <p>This property has been safely stored in your project. You can now view the project, add notes and collaborators, or search for additional properties. </p>
-          <div class="spacer"></div>
-        <div class="btn-container text-center">
-          <button class="btn btn-primary">View Projects</button>
-          <button class="btn btn-light">Search Properties</button>
+        <h4>Invite User to Collaborate on “ProjectName” </h4>
+
+        <div class="search-property-input">
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="">
+              <select class="form-control" name="">
+                <option value="">Role</option>
+                <option value="">Role 1</option>
+                <option value="">Role 2</option>
+                <option value="">Role 3</option>
+              </select>
+          </div>
         </div>
+        <div class="spacer"></div>
+        <div class="btn-container text-center">
+          <button class="btn btn-primary">Update</button>
+          <button class="btn btn-light">Cancel</button>
+        </div>
+
       </div>
 
     </div>
@@ -481,14 +498,13 @@
 </div>
 
 
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script type="text/javascript">
     $(window).on('load',function(){
-        $('#project-update-modal').modal('show');
+        $('#invite-user-modal').modal('show');
     });
 </script>
 
