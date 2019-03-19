@@ -450,11 +450,47 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade project-update-modal" id="project-update-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+
+      <div class="modal-body-inner text-center">
+        <div class="modal-icon">
+          <img src="./images/project-update.png" alt="">
+        </div>
+
+        <h4>Project Updated </h4>
+        <p>This property has been safely stored in your project. You can now view the project, add notes and collaborators, or search for additional properties. </p>
+          <div class="spacer"></div>
+        <div class="btn-container text-center">
+          <button class="btn btn-primary">View Projects</button>
+          <button class="btn btn-light">Search Properties</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
 
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#project-update-modal').modal('show');
+    });
+</script>
 
 </body>
 

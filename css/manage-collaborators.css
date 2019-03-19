@@ -53,9 +53,7 @@ table th:last-child{
 .table tbody tr:last-child{
   border-bottom: 1px solid #bcc1cf;
 }
-.btn-container .btn{
-  margin-right: 25px
-}
+
 .manage-collaborators {
     padding: 0px 50px;
 }
