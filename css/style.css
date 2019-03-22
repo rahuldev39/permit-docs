@@ -221,6 +221,27 @@ ul.notification-list li .list-item {
     align-items: center;
     padding: 1.25rem;
 }
+.nav-item.user-dropdown .dropdown-menu {
+    min-width: 100%;
+    padding: 0px;
+}
+.nav-item.user-dropdown .dropdown-menu a.dropdown-item {
+    color: #121C4D;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    padding: 0px 0px;
+    border-bottom: 1px solid #BCC1CF;
+}
+.nav-item.user-dropdown .dropdown-menu a.dropdown-item:last-child{
+  margin-bottom: 0px
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #111c4d;
+}
 @media (max-width:992px){
   .navbar-nav {
     display: block;
