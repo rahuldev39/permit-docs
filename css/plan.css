@@ -7,7 +7,6 @@
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 50px;
-    margin-top: 13px;
 }
 .plan-block.active {
     box-shadow: 0px 0px 18px #508ee4;

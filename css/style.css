@@ -91,8 +91,9 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 50px
+    padding-top: 56px;
+    padding-bottom: 50px;
+    margin-bottom: 8px;
 }
 .page-header h2 {
     font-size: 32px;
