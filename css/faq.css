@@ -1,0 +1,91 @@
+.side-underlay {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+    width: 43%;
+    z-index: -1;
+}
+.main-content {
+    position: relative;
+}
+.list-view {
+    padding: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    flex: 1;
+}
+.side-navlist .list-view li {
+    background-image: url(./../images/arrow-right-white2.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.list-view li .list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.side-navlist .list-view li .list-item span {
+    color: white;
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 14px
+}
+.side-navlist .box-header h4{
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 37px;
+}
+.accordion .card {
+    margin-bottom: 25px;
+    border: 0px;
+    border-radius: 6px !important;
+}
+#accordionFaq .card-header {
+    background-color: white;
+    border-bottom: 0px;
+    padding: 0px
+}
+#accordionFaq .card-header h2 a {
+    padding: 27px 117px;
+    display: block;
+    color: #121C4D;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 30px;
+
+
+}
+#accordionFaq .card-header h2 a::after{
+  content: "";
+  height: 50px;
+  width: 50px;
+  position:absolute;
+  right: 115px;
+  top: 35px;
+  background-image: url(./../images/accordian-arrow.png);
+  background-repeat: no-repeat;
+  transition: all ease-in-out 300ms;
+}
+#accordionFaq .card-header h2 a.collapsed::after{
+  transform: rotate(180deg);
+}
+#accordionFaq .card-header h2 a span{
+  color: #121C4D;
+  font-size: 16.3px;
+  font-weight: bold;
+  line-height: 19px;
+  display: block;
+  margin-bottom: 10px
+}
+#accordionFaq .card-body{
+  padding: 25px 117px;
+  padding-top: 0px;
+  color: #121C4D;
+  font-size: 14px;
+  line-height: 24px;
+}
