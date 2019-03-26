@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PermitDocs - Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/modal.css" rel="stylesheet">
+  <link href="./css/search-result.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link nav-link-btn" href="#" data-toggle="modal" data-target="#create-project-modal">Create Project</a>
+          </li>
+
+          <li>
+            <div class="nav-search">
+              <input type="text" class="form-control" placeholder="Quick Search Address">
+              <div class="search-icon">
+                <img src="./images/search-icon.png" alt="">
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav nav-bar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="./images/bell-icon.png" alt="">
+              <div class="">
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link user-link" href="#">
+                <img src="./images/user-img.png" alt="">
+                AAA Architects
+             </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main-content">
+    <div class="side-underlay"></div>
+    <div class="container-fluid">
+      <div class="page-header property-search-header">
+        <div class="header-control">
+          <button class="btn btn-light d-flex justify-content-between">
+            <img src="./images/arrow-left-dark.png" alt="">Search Again
+          </button>
+          <div class="control-links">
+            <a href="#">
+              <img src="./images/print-icon.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./images/download-icon.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="property-search-header-text text-right">
+          <h2>Mission Dolores Park</h2>
+          <p class="address">Dolores St & 19th St, San Francisco, CA 94114</p>
+        </div>
+
+      </div>
+
+      <div class="page-content">
+
+        <div class="row">
+            <div class="col-md-3">
+              <div class="property-info-container">
+                <h4>Property Information</h4>
+                <p>We’ll discovered information about the property you searched, and also nearby properties. You have have the option to add the properties you search to a project, or search for new properties.</p>
+                <div class="property-info-btns">
+                  <button class="btn btn-primary btn-block">Add to New Project</button>
+                  <button class="btn btn-primary btn-block">Add to Existing Project</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+                <div class="loaction-thumbs-container">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="loc-thumb">
+                          <div class="thumb">
+                            <img src="./images/map1.png" alt="" class="">
+                          </div>
+                          <div class="view-full">
+                            <button class="btn btn-light btn-small">View Full</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="loc-thumb">
+                          <div class="thumb">
+                            <img src="./images/loaction-img.png" alt="" class="">
+                          </div>
+                          <div class="view-full">
+                            <button class="btn btn-light btn-small">View Full</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="loc-thumb">
+                          <div class="thumb">
+                            <img src="./images/map2.png" alt="" class="">
+                          </div>
+                          <div class="view-full">
+                            <button class="btn btn-light btn-small">View Full</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="spacer"></div>
+
+                <div class="list-panel">
+                  <div class="list-panel-head">
+                    <h4>Property Summary </h4>
+                    <span>
+                      <img src="./images/droparrow-white.png" alt="">
+                    </span>
+                  </div>
+                  <div class="list-panel-body">
+                    <ul>
+                      <li>
+                        <label>Property Type:</label>
+                        <span>Vacant Lot </span>
+                      </li>
+                      <li>
+                        <label>APN:</label>
+                        <span>104384</span>
+                      </li>
+                      <li>
+                        <label>Lot Size (Sq Ft / Acres):</label>
+                        <span>6,072 / 0.14</span>
+                      </li>
+                      <li>
+                        <label>Height Limits:</label>
+                        <span>35 ft</span>
+                      </li>
+                      <li>
+                        <label>Footprint of Existing Structure:</label>
+                        <span>35 ft</span>
+                      </li>
+                      <li>
+                        <label>Zoning Desig. and Zoning Map:</label>
+                        <span>CVPD-SF3</span>
+                      </li>
+                      <li>
+                        <label>Floor to Area Ratio (FAR):</label>
+                        <span>0.6</span>
+                      </li>
+                      <li>
+                        <label>Max Lot Coverage:</label>
+                        <span>N/A</span>
+                      </li>
+                      <li>
+                        <label>Max Paving / Hardscape:</label>
+                        <span>N/A</span>
+                      </li>
+                      <li>
+                        <label>Allowable Liv Area (Sq Ft):</label>
+                        <span>MRd Medium Residential 5-7 DU/Acre</span>
+                      </li>
+                      <li>
+                        <label>Setbacks:</label>
+                        <span>FY 10’, INT SY 4’, Street SY 10’, Rear 4’</span>
+                      </li>
+                      <li>
+                        <label>Existing Structure:</label>
+                        <span>1,598</span>
+                      </li>
+                      <li>
+                        <label>Primary Lot Number:</label>
+                        <span>51</span>
+                      </li>
+                      <li>
+                        <label>Map Number:</label>
+                        <span>0011054</span>
+                      </li>
+                      <li>
+                        <label>Subdivision Name</label>
+                        <span>Mission Dolores Park</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                  <div class="spacer"></div>
+
+                  <div class="list-panel">
+                    <div class="list-panel-head">
+                      <h4>Zoning Summary </h4>
+                      <span>
+                        <img src="./images/droparrow-white.png" alt="">
+                      </span>
+                    </div>
+                    <div class="list-panel-body">
+                      <ul>
+                        <li>
+                          <label>Property Type:</label>
+                          <span>Vacant Lot </span>
+                        </li>
+                        <li>
+                          <label>APN:</label>
+                          <span>104384</span>
+                        </li>
+                        <li>
+                          <label>Lot Size (Sq Ft / Acres):</label>
+                          <span>6,072 / 0.14</span>
+                        </li>
+                        <li>
+                          <label>Height Limits:</label>
+                          <span>35 ft</span>
+                        </li>
+                        <li>
+                          <label>Footprint of Existing Structure:</label>
+                          <span>35 ft</span>
+                        </li>
+                        <li>
+                          <label>Zoning Desig. and Zoning Map:</label>
+                          <span>CVPD-SF3</span>
+                        </li>
+                        <li>
+                          <label>Floor to Area Ratio (FAR):</label>
+                          <span>0.6</span>
+                        </li>
+                        <li>
+                          <label>Max Lot Coverage:</label>
+                          <span>N/A</span>
+                        </li>
+                        <li>
+                          <label>Max Paving / Hardscape:</label>
+                          <span>N/A</span>
+                        </li>
+                        <li>
+                          <label>Allowable Liv Area (Sq Ft):</label>
+                          <span>MRd Medium Residential 5-7 DU/Acre</span>
+                        </li>
+                        <li>
+                          <label>Setbacks:</label>
+                          <span>FY 10’, INT SY 4’, Street SY 10’, Rear 4’</span>
+                        </li>
+                        <li>
+                          <label>Existing Structure:</label>
+                          <span>1,598</span>
+                        </li>
+                        <li>
+                          <label>Primary Lot Number:</label>
+                          <span>51</span>
+                        </li>
+                        <li>
+                          <label>Map Number:</label>
+                          <span>0011054</span>
+                        </li>
+                        <li>
+                          <label>Subdivision Name</label>
+                          <span>Mission Dolores Park</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="spacer"></div>
+
+
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="property-info-container">
+              <h4>Nearby Properties</h4>
+              <p>You might be interested in these nearby properties. You can adjust the distance from your current property using the filter below.</p>
+              <div class="miles-from-property">
+                <div class="select-dropdown" >
+                <select>
+                  <option value="0">5</option>
+                  <option value="1">6</option>
+                  <option value="2">7</option>
+                  <option value="3">8</option>
+                </select>
+              </div>
+                <h5>Miles From Property</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <ul class="boxed-list-view nearby-pro-list">
+              <li>
+                <div class="card box-view ">
+                  <div class="card-body d-flex flex-row justify-content-between align-items-center">
+                    <div class="list-item">
+
+                      <div class="projects-text">
+                        <h4>Johnson St & 18th St, San Francisco, CA 94114</h4>
+                      </div>
+                    </div>
+                    <div class="right-btn d-flex align-items-center">
+                      <div class="location">
+
+                        <a href="#">
+                          <img src="./images/location.png" alt="">
+                        </a>
+                      </div>
+                      <button class="btn btn-light">View</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card box-view ">
+                  <div class="card-body d-flex flex-row justify-content-between align-items-center">
+                    <div class="list-item">
+
+                      <div class="projects-text">
+                        <h4>Dolores St & 15th St, San Francisco, CA 94114</h4>
+                      </div>
+                    </div>
+                    <div class="right-btn d-flex align-items-center">
+                      <div class="location">
+                        <a href="#">
+                          <img src="./images/location.png" alt="">
+                        </a>
+
+                      </div>
+                      <button class="btn btn-light">View</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card box-view ">
+                  <div class="card-body d-flex flex-row justify-content-between align-items-center">
+                    <div class="list-item">
+
+                      <div class="projects-text">
+                        <h4>Miles St & 15th St, San Francisco, CA 94114</h4>
+                      </div>
+                    </div>
+                    <div class="right-btn d-flex align-items-center">
+                      <div class="location">
+
+                        <a href="#">
+                          <img src="./images/location.png" alt="">
+                        </a>
+                      </div>
+                      <button class="btn btn-light">View</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card box-view ">
+                  <div class="card-body d-flex flex-row justify-content-between align-items-center">
+                    <div class="list-item">
+
+                      <div class="projects-text">
+                        <h4>Darke St & 15th St, San Francisco, CA 94114</h4>
+                      </div>
+                    </div>
+                    <div class="right-btn d-flex align-items-center">
+                      <div class="location">
+
+                        <a href="#">
+                          <img src="./images/location.png" alt="">
+                        </a>
+                      </div>
+                      <button class="btn btn-light">View</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button class="btn btn-light">View More</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/modal-cross.png" alt="">
+        </button>
+
+        <div class="search-project-content modal-body-inner text-center">
+          <div class="modal-icon">
+            <img src="./images/search-modal-icon.png" alt="">
+          </div>
+
+          <h4>Search for a Property</h4>
+
+          <div class="search-property-input">
+            <input type="text" class="form-control" placeholder="Search Property Address/APN">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>

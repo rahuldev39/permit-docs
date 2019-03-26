@@ -35,7 +35,8 @@ html,body{
   left: 0px
 }
 .navbar-brand{
-  margin-right: 60px
+  margin-right: 60px;
+  margin-left: 28px
 }
 .nav-link-btn {
     background-color: #dee3ec;
@@ -241,6 +242,12 @@ ul.notification-list li .list-item {
     color: #fff !important;
     text-decoration: none;
     background-color: #111c4d;
+}
+.nav-bar-right .nav-link{
+  padding: 0px 20px !important;
+}
+@media (min-width:992px){
+
 }
 @media (max-width:992px){
   .navbar-nav {

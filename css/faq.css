@@ -18,7 +18,10 @@
     background-image: url(./../images/arrow-right-white2.png);
     background-position: center right;
     background-repeat: no-repeat;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+.side-navlist .box-header {
+    margin-bottom: 30px;
 }
 .list-view li .list-item {
     flex: 1;
@@ -31,12 +34,13 @@
     margin-left: 15px;
     font-size: 14px
 }
-.side-navlist .box-header h4{
-  color: #FFFFFF;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  line-height: 37px;
+.side-navlist .box-header h4 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    line-height: 37px;
+    margin-top: 20px;
 }
 .accordion .card {
     margin-bottom: 25px;
@@ -88,4 +92,7 @@
   color: #121C4D;
   font-size: 14px;
   line-height: 24px;
+}
+#accordionFaq{
+  margin-top: 13px
 }
