@@ -1,5 +1,5 @@
-.control-links{
-  margin-top: 20px;
+.control-links {
+    margin-top: 25px;
 }
 .control-links a{
   margin-right: 15px
@@ -9,25 +9,40 @@
     font-size: 24px;
     font-weight: bold;
     line-height: 29px;
-    margin-top: 20px;
+    margin-top: 11px;
     margin-bottom: 0px;
 }
 .side-underlay {
     position: absolute;
     height: 100%;
     background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
-    width: 40%;
+    width: 33.4%;
     z-index: -1;
+}
+.property-map-container{
+  position: relative;
+}
+.property-thumb-list {
+    position: absolute;
+    top: 20px;
+    right: 31px;
+}
+.property-thumb-list .property-thumb {
+    margin-bottom: 3PX;
+}
+.property-thumb-list .property-thumb img {
+    box-shadow: 0px 0px 6px #9493939c;
+    max-width: 90px;
+    border-radius: 6px;
 }
 .property-info-container {
     color: white;
     margin-bottom: 15px;
 }
-.property-info-container h4{
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 37px;
-  margin-bottom: 20px
+.property-info-container h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 .property-info-container p{
   font-size: 14px;
@@ -35,43 +50,58 @@
   margin-bottom: 25px;
   text-align: justify;
 }
-.loc-thumb {
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
+.property-info-btns .btn{
+  margin-top: 15px
 }
-.loc-thumb .thumb {
+.property-view img {
     width: 100%;
-    height: 100%;
+    pointer-events: none;
 }
-.loc-thumb .thumb img{
-  width: 100%
-}
-.loc-thumb .view-full {
-    position: absolute;
-    padding: 10px;
-    z-index: 10;
-    bottom: 0px;
+.property-left-section .property-search-header {
+    margin-bottom: 0px;
+    padding-top: 29px;
 }
 .main-content{
   position: relative;
 }
-.list-panel-head{
-  border-radius: 5px 5px 0 0;
-  background-color: #121C4D;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  margin-bottom: 5px
+.list-panel-head {
+    background-color: #121C4D;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+    color: white;
+    padding: 13px 20px;
+    margin-bottom: 0px;
 }
-.list-panel-head h4{
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 26px;
-  margin-bottom: 0px
+.list-panel-head .nav{
+  display: flex;
+}
+.list-panel-head .nav-link {
+    line-height: 50px;
+    flex: 1;
+    color: white !important;
+    text-align: center;
+    max-width: 208px;
+    margin-right: 25px;
+    border-radius: 10px
+}
+.list-panel-head .nav-pills .nav-link.active{
+  color: #121C4D !important;
+    background-color: #DEE3EC;
+    border-color: #dde3ec;
+}
+.property-left-section{
+  padding: 0px 25px 0px 32px
+}
+.property-info-container .form-control {
+    border: 2px solid rgba(18,28,77,0.5);
+    box-shadow: none;
+    box-shadow: 0 5px 5px 0 rgba(18,28,77,0.1);
+}
+.separator {
+    height: 5px;
+    border-radius: 67px;
+    background-color: #FFFFFF;
+    margin-top: 45px;
+    margin-bottom: 25px;
 }
 .list-panel ul {
     padding: 0px;
@@ -79,7 +109,7 @@
     list-style-type: none;
 }
 .list-panel ul li {
-    padding: 17px 16px;
+    padding: 9px 25px;
     background-color: white;
     margin-bottom: 1px;
 }
@@ -87,7 +117,6 @@
     color: #121C4D;
     font-size: 18px;
     font-weight: bold;
-    line-height: 21px;
     margin-bottom: 0px;
     display: inline-block;
     min-width: 45%;
@@ -210,12 +239,18 @@
   line-height: 24px;
   margin-bottom: 0px
 }
+.property-search-header-text.white h2{
+  color: #ffffff;
+}
+.property-search-header-text.white p{
+  color: rgba(255,255,255,0.5);
+}
 @media (max-width:768px) {
 .side-underlay{
-  display: none;
+  width: 100%
 }
 .property-info-container {
-    color: #121c4c;
+
 }
 .select-selected {
     background-color: #121c4c;
