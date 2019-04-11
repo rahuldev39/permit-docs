@@ -1,0 +1,53 @@
+.file-upload-list{
+  margin-top: 10px;
+  margin-bottom: 13px
+}
+.file-upload-list ul{
+  padding: 0px;
+  margin-bottom: 0px;
+  list-style-type: none;
+}
+.file-upload-list ul li.file-upload-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 15px 11px 12px;
+    background-color: #e7e8ed;
+    border-radius: 10px;
+    color: #121C4D;
+    font-size: 12px;
+    font-weight: bold;
+}
+.file-upload-list ul li.file-upload-item .file-info .delete-item img{
+  height: 13px
+}
+.file-upload-list ul li.file-upload-item .file-info .file-size{
+  margin-right: 18px
+}
+.file-upload-list ul li.file-upload-item .file-info{
+  opacity: .5
+}
+.file-upload-list ul li.file-upload-item .file-info:hover{
+  opacity: 1
+}
+.file-upload-controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.file-upload-controls .upload-btn button {
+    padding: 0px;
+    line-height: normal;
+    height: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111c4d;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.file-upload-controls .upload-btn button img{
+  height: 24px;
+  margin-left: 15px
+}
