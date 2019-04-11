@@ -109,16 +109,53 @@
                   <h4>Filters</h4>
 
                 </div>
-                <ul class="list-view filter-list">
+                <ul class="list-view filter-list" id="filter-list">
                   <li class="active">
                     <div class="list-item">
                       <img src="./images/chat-icon.png" alt="">
                       <span>Most Recent</span>
                     </div>
                     <div class="right-icon">
-                      <a href="#">
+                      <a role="button" data-toggle="collapse"  href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <img src="./images/arrow-right-white.png" alt="">
                       </a>
+                    </div>
+                    <div class="filter-dropdown">
+                      <div id="collapseOne" class="collapse" data-parent="#filter-list">
+                        <div class="card">
+                          <div class="card-body">
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Miles Family Residence</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Jhonson Family</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Liberty Bank</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -127,9 +164,46 @@
                       <span>Most Popular Projects</span>
                     </div>
                     <div class="right-icon">
-                      <a href="#">
+                      <a data-toggle="collapse"  href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <img src="./images/arrow-right-white.png" alt="">
                       </a>
+                    </div>
+                    <div class="filter-dropdown">
+                      <div id="collapseTwo" class="collapse" data-parent="#filter-list">
+                        <div class="card">
+                          <div class="card-body">
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Miles Family Residence</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Jhonson Family</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="#">
+                                      <h4>Liberty Bank</h4>
+                                      <span>02/06/2019 at 12:13PM</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </li>
                 </ul>

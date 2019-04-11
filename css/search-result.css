@@ -245,6 +245,40 @@
 .property-search-header-text.white p{
   color: rgba(255,255,255,0.5);
 }
+.projects-text label input[type="checkbox"] {
+    display: none;
+}
+.projects-text label input[type="checkbox"] + h4 {
+    position: relative;
+    padding-left: 44px;
+}
+.projects-text label input[type="checkbox"]:checked + h4::after {
+    background-image: url(./../images/checkbox-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.projects-text label input[type="checkbox"] + h4::after {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: -1px;
+    border-radius: 6px;
+}
+.projects-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #121C4D;
+    margin-bottom: 0px;
+    margin: 16px 0px;
+}
+.boxed-list-view li {
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #b1b1b1;
+}
 @media (max-width:768px) {
 .side-underlay{
   width: 100%

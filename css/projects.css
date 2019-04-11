@@ -79,8 +79,43 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.list-view li .filter-dropdown{
+  width: 100%
+}
+.filter-dropdown .card{
+  margin-top: 5px
+}
+.filter-dropdown .card-body {
+    padding: 0px 9px;
+}
+.filter-dropdown .card-body table {
+  margin-bottom: 0px
+}
+.filter-dropdown .card-body table td {
+    padding: 9px 0px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.filter-dropdown .card-body table tr:first-child td{
+  border-top: 0px
+}
 
-    margin-bottom: 20px
+.filter-dropdown .card-body table td h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: #111c4d;
+}
+.filter-dropdown .card-body table td span {
+    font-size: 12px;
+    color: #111c4d;
+    opacity: .5;
+}
+.filter-dropdown .card-body table td .btn-sm{
+
 }
 .list-view li .list-item {
     flex: 1;
