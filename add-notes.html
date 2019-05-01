@@ -486,15 +486,41 @@
             </ul>
           </div>
           <div class="file-upload-controls">
-            <div class="records">
-              <select class="form-control" style="padding: 0px 0px;
-    min-width: 237px;
-    height: auto;
-    border: 0px;
-    box-shadow: none;
-    font-size: 16px;">
-                <option value="">Associate with 1 Record</option>
-              </select>
+            <div class="records dropup">
+                <button class="record-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Associate with 1 Record <img src="./images/select-arrow.png" alt="">
+                </button>
+                <div class="dropdown-menu">
+                  <div class="record-drop-header">
+                    <h4>Associate this Note with Properties in this Project </h4>
+                  </div>
+                  <ul class="checkbox-list">
+                    <li>
+                      <div class="notes-checkbox">
+                        <label>
+                          <input type="checkbox" name="" value="">
+                          <span>All Properties</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notes-checkbox">
+                        <label>
+                          <input type="checkbox" name="" value="">
+                          <span>Property Name1</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notes-checkbox">
+                        <label>
+                          <input type="checkbox" name="" value="">
+                          <span>Property Name2</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
             </div>
             <div class="upload-btn">
               <button class="">
