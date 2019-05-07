@@ -247,3 +247,97 @@
   padding-top: 1.66rem;
   padding-bottom: 1.66rem
 }
+.project-item-header .btn-light{
+  margin-right: 25px
+}
+.project-item-listing .right-btn .btn {
+    min-width: 150px;
+    margin-left: 15px;
+}
+.project-item-droptoggle-box {
+  width: 100%
+}
+.project-item-droptoggle img{
+  width: 15px;
+  margin-left: 12px
+}
+.project-item-controls img {
+    width: 14px;
+    margin-right: 8px
+}
+.project-item-controls .control-item {
+    margin-left: 30px;
+    cursor: pointer;
+}
+.project-item-droptoggle-box {
+    color: #121C4D;
+    font-size: 14px;
+    padding: 0px 11px 0px 43px;
+    margin-top: 10px;
+    padding-bottom: 1.25rem;
+}
+.project-item-listing .card-body{
+  padding-bottom: 0px
+}
+.project-item-dropdown {
+    background-color: #dee3ec;
+    padding: 36px 25px 20px 25px;
+    margin: 0px -1.25rem !important;
+    border-radius: 0px 0px .25rem .25rem;
+}
+.drop-header h4{
+  color: #121C4D;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.project-item-notes ul{
+  padding: 0px;
+  margin: 0px
+}
+.project-item-notes ul li {
+    padding: 20px 0px !important;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #78809c;
+}
+
+.project-item-notes ul li .img-thumb{
+  margin-right: 42px
+}
+.project-item-notes ul li .img-thumb img{
+  height: 50px;
+  border-radius: 50%
+}
+.project-item-notes ul li .notes-item-text h4{
+  color: #121C4D;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+}
+.project-item-notes ul li .notes-item-text span{
+  color: rgba(18,28,77,0.75);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.drop-footer{
+  margin-top: 20px;
+}
+.drop-footer .btn{
+  margin-right: 20px
+}
+.project-item-notes-controls {
+    margin-left: 3px;
+    color: #111c4d !important;
+}
+.project-item-droptoggle:not(.collapsed) img{
+  transform: rotate(180deg);
+}
+.user-thumb{
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+    position: relative;
+}

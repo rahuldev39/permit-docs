@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PermitDocs - Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/modal.css" rel="stylesheet">
+  <link href="./css/search-item.css" rel="stylesheet">
+  <link href="./vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link nav-link-btn" href="#" data-toggle="modal" data-target="#create-project-modal">Create Project</a>
+          </li>
+
+          <li>
+            <div class="nav-search">
+              <input type="text" class="form-control" placeholder="Quick Search Address">
+              <div class="search-icon">
+                <img src="./images/search-icon.png" alt="">
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav nav-bar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="./images/bell-icon.png" alt="">
+              <div class="">
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link user-link" href="#">
+                <img src="./images/user-img.png" alt="">
+                AAA Architects
+             </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main-content">
+    <div class="side-underlay"></div>
+    <div class="container-fluid">
+      <div class="page-header property-search-header">
+        <div class="header-control">
+        <div class="user-list">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/user-thumb1.jpg" alt="">
+                 <span class="badge"><i class="fa fa-check" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/user-thumb2.jpg" alt="">
+                <span class="badge"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li class="avatar">
+              <a href="#">
+                <img src="./images/user-thumb.png" alt="">
+                <span class="badge"><i class="fa fa-check" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/plus.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="property-search-header-text text-right">
+          <h2>Miles Family Residence</h2>
+        </div>
+
+      </div>
+
+      <div class="page-content">
+
+        <div class="row">
+            <div class="col-md-3">
+              <div class="project-option-container">
+                <div class="box-header">
+                  <h4>Project Options </h4>
+
+                </div>
+                <ul class="list-view">
+                  <li>
+                    <div class="list-item">
+                      <img src="./images/pen.png" alt="">
+                      <span>Rename Project </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <img src="./images/cross-white.png" alt="">
+                      <span>Delete Project</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <img src="./images/share-white.png" alt="">
+                      <span>Manage Collaborators </span>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-md-9">
+
+              <div class="project-item-header">
+                  <h4>Properties</h4>
+                  <div class="header-control">
+                  <div class="control-list">
+                    <button class="btn btn-light">Duplicate Property</button>
+                    <button class="btn btn-light">Delete Property</button>
+                    <button class="btn btn-primary">Add Property</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-item-listing">
+                <ul class="boxed-list-view">
+                <li>
+                  <div class="card box-view ">
+                    <div class="card-body ">
+                      <div class="d-flex flex-row justify-content-between align-items-center flex-wrap">
+                        <div class="list-item">
+                          <div class="projects-text">
+                            <label>
+                              <input type="checkbox" checked="">
+                              <h4>Dolores St & 15th St, San Francisco, CA 94114</h4>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="right-btn d-flex align-items-center">
+                          <button class="btn btn-light">View Property</button>
+                          <button class="btn btn-light">View Codes</button>
+                        </div>
+                      </div>
+
+                      <div class="project-item-droptoggle-box d-flex flex-row justify-content-between align-items-cente ">
+                        <div class="project-item-droptoggle" data-toggle="collapse" href="#collapse1">
+                          <span>View Notes on Property</span>
+                          <img src="./images/select-arrow.png" alt="">
+                        </div>
+                        <div class="project-item-controls d-flex flex-row justify-content-between align-items-cente">
+                          <div class="control-item">
+                            <img src="./images/pencil-icon.png" alt="">
+                            <span>Rename</span>
+                          </div>
+                          <div class="control-item">
+                            <img src="./images/trash.png" alt="">
+                            <span>Delete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-item-dropdown collapse show" id="collapse1">
+                          <div class="drop-header">
+                            <h4>Property Notes</h4>
+                          </div>
+                          <div class="project-item-notes ">
+                            <ul>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <img src="./images/user-thumb1.jpg" alt="">
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>"Love this property, and it's matching my criteria"</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Edit</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <div class="user-thumb">
+                                    <img src="./images/user-thumb.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>“Holy Moly. I love this property. Will they allow us to build a pool?”</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <img src="./images/user-thumb2.jpg" alt="">
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>"Love this property, and it's matching my criteria"</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Edit</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="drop-footer">
+                            <button class="btn btn-primary">Add Notes</button>
+                            <button class="btn btn-primary">View All Property Notes</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="card box-view ">
+                    <div class="card-body ">
+                      <div class="d-flex flex-row justify-content-between align-items-center flex-wrap">
+                        <div class="list-item">
+                          <div class="projects-text">
+                            <label>
+                              <input type="checkbox" checked="">
+                              <h4>Dolores St & 15th St, San Francisco, CA 94114</h4>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="right-btn d-flex align-items-center">
+                          <button class="btn btn-light">View Property</button>
+                        </div>
+                      </div>
+
+                      <div class="project-item-droptoggle-box d-flex flex-row justify-content-between align-items-cente ">
+                        <div class="project-item-droptoggle collapsed" data-toggle="collapse" href="#collapse2">
+                          <span>View Notes on Property</span>
+                          <img src="./images/select-arrow.png" alt="">
+                        </div>
+                        <div class="project-item-controls d-flex flex-row justify-content-between align-items-cente">
+                          <div class="control-item">
+                            <img src="./images/pencil-icon.png" alt="">
+                            <span>Rename</span>
+                          </div>
+                          <div class="control-item">
+                            <img src="./images/trash.png" alt="">
+                            <span>Delete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-item-dropdown collapse" id="collapse2">
+                          <div class="drop-header">
+                            <h4>Property Notes</h4>
+                          </div>
+                          <div class="project-item-notes">
+                            <ul>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <img src="./images/user-thumb1.jpg" alt="">
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>"Love this property, and it's matching my criteria"</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Edit</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <img src="./images/user-thumb2.jpg" alt="">
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>“Holy Moly. I love this property. Will they allow us to build a pool?”</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="d-flex flex-row align-items-center">
+                                <div class="img-thumb">
+                                  <div class="user-thumb">
+                                    <img src="./images/user-thumb.png" alt="">
+                                  </div>
+                                </div>
+                                <div class="notes-item-text">
+                                  <h4>"Love this property, and it's matching my criteria"</h4>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span>Cody Miles added this note on 2/11/2019 at 3:00PM</span>
+                                    <span class="project-item-notes-controls">| Edit</span>
+                                    <span class="project-item-notes-controls">| Delete</span>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="drop-footer">
+                            <button class="btn btn-primary">Add Notes</button>
+                            <button class="btn btn-primary">View All Property Notes</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+
+
+
+
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/modal-cross.png" alt="">
+        </button>
+
+        <div class="search-project-content modal-body-inner text-center">
+          <div class="modal-icon">
+            <img src="./images/search-modal-icon.png" alt="">
+          </div>
+
+          <h4>Search for a Property</h4>
+
+          <div class="search-property-input">
+            <input type="text" class="form-control" placeholder="Search Property Address/APN">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>
