@@ -1,0 +1,111 @@
+.account-form .form-control {
+    border: 2px solid rgba(18,28,77,0.5);
+    box-shadow: none;
+}
+.table thead th {
+    border-bottom: 0px;
+}
+.table thead{
+  border-radius: 5px 5px 0 0;
+
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+  color: white
+}
+.table thead th{
+  background-color: #121C4D;
+}
+table th:first-child{
+  border-radius:6px 0 0 0px;
+}
+
+table th:last-child{
+  border-radius:0 6px 0px 0;
+}
+.table th {
+    padding: 15px 25px;
+}
+.table td {
+    padding: 30px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #121C4D;
+    border-top: 1px solid #bcc1cf;
+}
+.modal-dialog {
+    max-width: 1142px;
+}
+.table-controls-link{
+    color: #121C4D;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+
+}
+.table-controls-link img{
+  margin-right: 18px;
+
+}
+.table-controls-link:hover{
+  opacity: 1;
+  color: #121C4D;
+  text-decoration: none;
+}
+.table{
+  margin-bottom: 0px
+}
+.table tbody tr:last-child{
+  border-bottom: 1px solid #bcc1cf;
+}
+.manage-user-container .account-form{
+  min-width: 325px
+}
+.upload-profile{
+  padding: 0px 25px
+}
+.profile-img img{
+  width: 209px;
+  height: 209px;
+  border-radius: 50%;
+}
+.upload-text span{
+  color: #121C4D;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  margin-right: 15px
+}
+.profile-img{
+  margin-bottom: 20px
+}
+.manage-user-container{
+      padding: 0px 50px;
+}
+.manage-user-modal .modal-body {
+    padding-top: 0px;
+}
+.manage-user-modal .modal-title{
+  padding-left: 50px
+}
+.manage-user-modal .modal-header{
+  padding-bottom: 5px
+}
+.account-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    line-height: initial !important;
+    background-image: url(./../images/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+}
+.table-title{
+  color: #121C4D;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 37px;
+    margin-bottom: 30px
+}
+.manage-user-container .account-form{
+  padding-top: 25px
+}

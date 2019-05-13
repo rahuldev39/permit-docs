@@ -308,11 +308,12 @@
   height: 50px;
   border-radius: 50%
 }
-.project-item-notes ul li .notes-item-text h4{
-  color: #121C4D;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 19px;
+.project-item-notes ul li .notes-item-text h4 {
+    color: #121C4D;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 13px;
 }
 .project-item-notes ul li .notes-item-text span{
   color: rgba(18,28,77,0.75);
@@ -329,6 +330,11 @@
 .project-item-notes-controls {
     margin-left: 3px;
     color: #111c4d !important;
+    opacity: .8;
+    cursor: pointer;
+}
+.project-item-notes-controls:hover{
+  opacity: 1
 }
 .project-item-droptoggle:not(.collapsed) img{
   transform: rotate(180deg);
