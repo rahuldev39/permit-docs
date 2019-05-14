@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+.project-map {
+    height: 110px;
+    width: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 25px;
+    box-shadow: 2px 4px 4px #e2e0e0;
+}
+.define-project-container .activity-text span{
+  opacity: 0.5;
+  color: #121C4D;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.define-project-container .activity-text h4{
+  color: #121C4D;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.define-project-option{
+  padding: 25px 23px 25px 27px;
+  border-radius: 10px;
+  background-color: white
+}
+
+.define-project-option .list-view li{
+  margin-bottom: 10px;
+  opacity: .5
+}
+.define-project-option .list-view li.active{
+  opacity: 1
+}
+.define-project-option .box-header{
+      margin-bottom: 15px;
+}
+.define-project-option .box-header h4{
+  color: #444444
+}
+.boxed-list-view{
+  margin-bottom: 0px
+}
+.boxed-list-view li:last-child{
+  margin-bottom: 0px
+}
+.project-steps-pane {
+    padding: 30px 0px;
+}
+.project-steps-pane .steps-header h4{
+  color: #121C4D;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.project-steps-pane .steps-header strong{
+  color: #121C4D;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.project-type-tabs .btn {
+    min-width: 150px;
+    margin-right: 25px;
+    padding: 0px 10px;
+}
+.define-project-container .card{
+  border-radius: 8px
+}
+.side-underlay {
+    width: 474px;
+}
+.custom-checkbox label{
+  position: relative;
+  margin-bottom: 0px
+}
+.custom-checkbox label input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox label input[type="checkbox"] + span {
+    display: inline-block;
+        padding-left: 20px;
+}
+.custom-checkbox label input[type="checkbox"] + span::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: 2px;
+    border-radius: 5px;
+}
+.custom-checkbox label input[type="checkbox"]:checked + span::after {
+    background-image: url(./../images/checkbox-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+.project-criteria-list ul{
+  list-style-type: none;
+  padding: 0px
+}
+.project-criteria-list ul li {
+    border-bottom: 2px solid #cbcbcb;
+    margin-bottom: 0px;
+    padding: 10.5px 0 9.5px;
+}
+.project-criteria-list ul li span {
+    color: #121C4D;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.steps-footer{
+  padding-top: 25px
+}
+.steps-footer .btn{
+  min-width: 150px
+}
+.btn-gradient{
+  background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+  border: 0px
+}

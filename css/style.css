@@ -247,6 +247,13 @@ ul.notification-list li .list-item {
 .nav-bar-right .nav-link{
   padding: 0px 20px !important;
 }
+.btn-primary.disabled{
+  color: #fff;
+    background-color: #111c4d;
+    border-color: #111c4d;
+    opacity: .5;
+}
+
 @media (min-width:992px){
 
 }
