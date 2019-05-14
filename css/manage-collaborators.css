@@ -57,3 +57,14 @@ table th:last-child{
 .manage-collaborators {
     padding: 0px 50px;
 }
+
+.download-zoning-codes .table-controls-link img {
+    margin-right: 0px;
+}
+.download-zoning-codes .table-controls-link span{
+  display: inline-block;
+  margin-right: 20px
+}
+.download-zoning-codes{
+    padding: 0px 50px;
+}
