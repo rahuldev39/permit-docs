@@ -253,7 +253,15 @@ ul.notification-list li .list-item {
     border-color: #111c4d;
     opacity: .5;
 }
-
+textarea.form-control {
+    line-height: 26px;
+}
+.feedback-form .sm{
+  width: 325px
+}
+.btn.btn-large{
+  min-width: 325px
+}
 @media (min-width:992px){
 
 }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PermitDocs - Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/modal.css" rel="stylesheet">
+  <link href="./css/account.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview
+            </a>
+          </li>
+          <li class="nav-item  ">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link nav-link-btn" href="#" data-toggle="modal" data-target="#create-project-modal">Create Project</a>
+          </li>
+
+          <li>
+            <div class="nav-search">
+              <input type="text" class="form-control" placeholder="Quick Search Address">
+              <div class="search-icon">
+                <img src="./images/search-icon.png" alt="">
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav nav-bar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="./images/bell-icon.png" alt="">
+              <div class="">
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link user-link" href="#">
+                <img src="./images/user-img.png" alt="">
+                AAA Architects
+             </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main-content">
+
+    <div class="container-fluid">
+      <div class="page-header property-search-header">
+        <div class="header-control">
+
+        </div>
+
+        <div class="property-search-header-text text-right">
+          <h2>Submit Feedback</h2>
+        </div>
+
+      </div>
+
+      <div class="page-content">
+
+        <div class="row">
+
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="account-form feedback-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control sm" placeholder="Feedback Overview">
+                  </div>
+
+                  <div class="form-group">
+                    <select class="form-control sm" name="">
+                      <option value="">Feedback Category</option>
+                      <option value="">Role 1</option>
+                      <option value="">Role 2</option>
+                      <option value="">Role 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                  <textarea class="form-control" rows="7" cols="80" placeholder="Discription"></textarea>
+
+                  </div>
+
+                  <button class="btn btn-primary btn-large">
+                    Submit
+                  </button>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer"></div><div class="spacer"></div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/modal-cross.png" alt="">
+        </button>
+
+        <div class="search-project-content modal-body-inner text-center">
+          <div class="modal-icon">
+            <img src="./images/search-modal-icon.png" alt="">
+          </div>
+
+          <h4>Search for a Property</h4>
+
+          <div class="search-property-input">
+            <input type="text" class="form-control" placeholder="Search Property Address/APN">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>
