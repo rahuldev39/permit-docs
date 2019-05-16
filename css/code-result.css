@@ -1,0 +1,205 @@
+.code-result-content{
+  padding-left: 0px
+}
+.header-overlay{
+    position: absolute;
+    height: 280px;
+    background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+    width: 100%;
+    z-index: -1;
+}
+.control-list{
+  display: flex;
+  align-items: center;
+}
+.page-header-dark{
+  padding-top: 25px;
+    padding-bottom: 25px;
+}
+.page-header-top{
+  margin-bottom: 10px
+}
+.page-header-top h2{
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 37px;
+  margin-bottom: 0px;
+}
+.page-header-top .control-list .btn{
+  margin-left: 25px
+}
+select.form-control {
+    border: 2px solid rgba(18,28,77,1);
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    line-height: initial !important;
+    background-image: url(./../images/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    min-width: 200px
+}
+.assign-to{
+  margin-bottom: 25px
+}
+.assign-to h5{
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.tabbed-list .btn{
+  min-width: 92px;
+  border-radius: 5px;
+  margin:0px 7.5px
+}
+.tabbed-list .btn:last-child{
+  margin-right: 0px
+}
+.tabbed-list .btn:first-child{
+  margin-left: 0px
+}
+.page-header-dark .tabbed-list .btn.btn-light{
+  background-color: white;
+  border-color: white
+}
+.tabbed-list .btn.btn-link{
+      color: #121C4D;
+      opacity: .6;
+          font-weight: bold;
+}
+.code-result-sidebar .card-body{
+  padding: 0px
+}
+.code-result-sidebar-header{
+  padding: 25px 0px;
+  border-bottom: 2px solid #D8D8D8;
+}
+.comment-header .user-img img{
+  height: 28px;	width: 28px;
+  border-radius: 50%
+}
+.comment-header .user-detail h5 {
+    color: #121C4D;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.82px;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+.comment-header .user-detail span{
+  color: rgba(18,28,77,0.5);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.82px;
+  line-height: 18px;
+  display: block;
+}
+.comment-header .user-detail{
+  margin-left: 10px
+}
+.code-result-sidebar-body{
+  padding: 24px 20px 40px 32px;
+  border-bottom: 2px solid #D8D8D8;
+}
+.comment-header .comment-control a{
+  margin-left: 10px
+}
+.comment-header{
+  margin-bottom: 18px
+}
+.comment-body p{
+  color: #121C4D;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px
+}
+.comment-footer .reply-comment{
+  color: rgba(18,28,77,0.5);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.82px;
+  display: block;
+}
+.comment-list .comment-box:last-child{
+  margin-bottom: 0px
+}
+.comment-box{
+  margin-bottom: 30px
+}
+.comment-box.reply-comment{
+  border-left: 10px solid #121C4D;
+  padding-left: 20px
+}
+.comment-base{
+      padding: 24px 20px 40px 32px;
+}
+.comment-base .form-control{
+  border: 1px solid #121C4D;
+  border-radius: 5px 5px 0 0;
+}
+.comment-base .btn{
+border-radius: 0 0 5px 5px;
+}
+.code-result-content-head{
+  margin-bottom: 25px
+}
+.code-result-content-head h4{
+  color: #121C4D;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+}
+.code-result-main p{
+  color: #121C4D;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 25px
+}
+.content-subheading{
+  color: #121C4D;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  margin-bottom: 25px
+}
+.code-result-main table th{
+  font-weight: bold;
+  background-color: #dde3ec
+}
+.code-result-main table td{
+  border-bottom: 1px solid #888da6;
+  border-top: 0px
+}
+.code-result-main table td, .code-result-main table th{
+  color: #121C4D;
+  font-size: 12px;
+  padding: 18px 20px;
+    line-height: 14px;
+}
+.code-result-main table{
+  margin-bottom: 25px
+}
+.leave-comment-box{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px
+}
+.leave-comment-box .btn{
+      border-radius: 0 0 5px 5px;
+}
+.leave-comment-box::before {
+    content: "";
+    height: 64px;
+    width: 100%;
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    position: absolute;
+    bottom: 100%;
+}
