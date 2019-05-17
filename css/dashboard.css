@@ -1,10 +1,11 @@
-.video-container{
-  position: relative;
-  min-height: 408px;
-  background-color: #DEE3EC;
+.video-container {
+    position: relative;
+    min-height: 408px;
+
+    width: 50%;
 }
 .play-btn{
-  position: absolute;
+  background-color: #DEE3EC;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -12,6 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.get-started, .account-info{
+  width: 25%
+}
+.row-padder{
+  padding-right: 15px;
+    padding-left: 15px;
 }
 .list-view {
     padding: 0px;
@@ -72,4 +80,17 @@ color: rgba(18,28,77,0.5);
     color: #121C4D;
     margin-bottom: 0px;
     margin: 16px 0px;
+}
+@media (max-width:1024px) {
+  .video-container{
+    width: 100%
+  }
+  .get-started, .account-info {
+    width: 50%;
+}
+}
+@media (max-width:768px){
+  .get-started, .account-info {
+    width: 100%;
+}
 }
