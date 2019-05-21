@@ -102,7 +102,7 @@ select.form-control {
 }
 .code-result-sidebar-body{
   padding: 24px 20px 40px 32px;
-  border-bottom: 2px solid #D8D8D8;
+
 }
 .comment-header .comment-control a{
   margin-left: 10px
@@ -135,6 +135,7 @@ select.form-control {
 }
 .comment-base{
       padding: 24px 20px 40px 32px;
+      border-top: 2px solid #D8D8D8;
 }
 .comment-base .form-control{
   border: 1px solid #121C4D;
@@ -202,4 +203,17 @@ background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,
 
     position: absolute;
     bottom: 100%;
+}
+.codes-document-list{
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none
+}
+.codes-document-list .btn{
+  margin-bottom: 10px
+}
+.codes-document-list .btn-link {
+    text-align: left;
+    color: #111c4d;
+    font-weight: bold;
 }
