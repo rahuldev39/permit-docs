@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>PermitDocs - Dashboard</title>
-
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/dashboard.css" rel="stylesheet">
   <link href="./css/modal.css" rel="stylesheet">
-
+  <link href="./css/search-code.css" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container-fluid">
@@ -43,24 +38,6 @@
             <a class="nav-link nav-link-btn" href="#" data-toggle="modal" data-target="#create-project-modal">Create Project</a>
           </li>
 
-          <li class="property-address-link dropdown">
-            <button class="btn btn-link d-flex justify-content-between align-items-center btn-block text-left" data-toggle="dropdown">
-              <div class="">
-                <span>Search:</span>
-                Property Address
-              </div>
-
-              <div class="">
-                <img src="./images/arrow-right-white.png" alt="">
-              </div>
-
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Search by Property Address</a>
-              <a class="dropdown-item" href="#">Search by Zoning Codesion</a>
-            </div>
-          </li>
-
           <li>
             <div class="nav-search">
               <input type="text" class="form-control" placeholder="Quick Search Address">
@@ -69,7 +46,6 @@
               </div>
             </div>
           </li>
-
         </ul>
 
         <ul class="navbar-nav nav-bar-right">
@@ -164,17 +140,17 @@
       </div>
 
       <div class="page-content">
-        <div class="row flex-wrap">
-
-          <div class="video-container row-padder">
-            <div class="play-btn">
-              <a href="#">
-                <img src="./images/play-icon.png" alt="">
-              </a>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="video-container">
+              <div class="play-btn">
+                <a href="#">
+                  <img src="./images/play-icon.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="get-started row-padder">
+          <div class="col-md-3">
             <div class="card box-view">
               <div class="card-body">
                 <div class="box-header">
@@ -224,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="account-info row-padder">
+          <div class="col-md-3">
             <div class="card box-view">
               <div class="card-body">
                 <div class="box-header">
@@ -476,10 +452,184 @@
 </div>
 
 
+<!-- Modal -->
+<div class="modal fade search-codes-modal" id="export-codes-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header code-search-header">
+      <div class="code-search-header-text">
+        <h5>Code Search</h5>
+        <span>Select the zoning codes for your project</span>
+      </div>
+      <div class="code-search-header-select">
+        <select class="form-control" name="">
+          <option>San Diego</option>
+        </select>
+      </div>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+    </div>
+    <div class="search-code-control">
+      <div class="search-input">
+        <input type="text" class="form-control" placeholder="Search Code">
+        <div class="search-code-dropdown">
+          <div class="search-code-dropdown_body">
+            <div class="search-code-table">
+                <div class="table-responsive">
+                  <table class="table">
+
+                    <tbody>
+                      <tr>
+                        <td>Transitional Housing Facilities</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="" checked>
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Continuing Care Retirement Communities</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="">
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Employee Housing</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="">
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Fraternity Houses, Sorority Houses, and Student Dormitories</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="">
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Garage, Yard, and Estate Sales</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="">
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Another Code</td>
+                        <td width="100"><span class="light-text">§141.0302</span></td>
+                        <td width="150">
+                          <div class="table-controls-checkbox">
+
+                            <label>
+                              <input type="checkbox" name="" value="">
+                              <span>
+                                <b class="code-selected">Code Selected</b>
+                                <b class="code-unselect">Select Code</b>
+                              </span>
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+          </div>
+          <div class="search-code-dropdown_footer text-right">
+            <button type="button" class="btn btn-primary">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="search-dropdown-overlay"></div>
+    </div>
+    <div class="modal-body">
+
+      <div class="search-code-table">
+          <h4 class="table-title">Selected Codes</h4>
+
+          <strong class="code-empty-text">You have not selected any zoning codes. Use the search field above to begin selecting codes.</strong>
+
+        </div>
+
+    </div>
+    <div class="modal-footer justify-content-end">
+
+      <button type="button" class="btn btn-primary disabled">Save & View Code</button>
+    </div>
+  </div>
+</div>
+</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#export-codes-modal').modal('show');
+    });
+</script>
+
+<script type="text/javascript">
+  $('.search-code-control input.form-control').bind('focus', function() {
+      $('.search-code-control').addClass('show')
+  })
+  $('.search-code-control .search-dropdown-overlay').on('click', function() {
+      $('.search-code-control').removeClass('show')
+  })
+</script>
 
 </body>
 

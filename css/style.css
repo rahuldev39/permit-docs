@@ -46,7 +46,7 @@ html,body{
 .nav-search {
     border-left: 1px solid #BCC1CF;
     height: 65px;
-    margin-left: 32px;
+    margin-left: 0px;
     position: relative;
 }
 .nav-search .form-control {
