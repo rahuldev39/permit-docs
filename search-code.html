@@ -458,8 +458,8 @@
   <div class="modal-content">
     <div class="modal-header code-search-header">
       <div class="code-search-header-text">
-        <h5>Code Search</h5>
-        <span>Select the zoning codes for your project</span>
+        <h5>Select Codes</h5>
+        <span>Select the Zoning codes for your project</span>
       </div>
       <div class="code-search-header-select">
         <select class="form-control" name="">
@@ -472,7 +472,21 @@
     </div>
     <div class="search-code-control">
       <div class="search-input">
-        <input type="text" class="form-control" placeholder="Search Code">
+        <div class="btn-group w-100" role="group" aria-label="Basic example">
+          <button class="btn btn-primary d-flex justify-content-between align-items-center text-left">
+            <div class="">
+              <span>Search:</span>
+              All Codes
+            </div>
+
+            <div class="">
+              <img src="./images/arrow-right-white.png" alt="">
+            </div>
+          </button>
+
+          <button class="btn btn-light d-flex justify-content-between align-items-center btn-block text-left">Search Code</button>
+        </div>
+
         <div class="search-code-dropdown">
           <div class="search-code-dropdown_body">
             <div class="search-code-table">
@@ -482,6 +496,7 @@
                     <tbody>
                       <tr>
                         <td>Transitional Housing Facilities</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -498,6 +513,7 @@
                       </tr>
                       <tr>
                         <td>Continuing Care Retirement Communities</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -515,6 +531,7 @@
 
                       <tr>
                         <td>Employee Housing</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -532,6 +549,7 @@
 
                       <tr>
                         <td>Fraternity Houses, Sorority Houses, and Student Dormitories</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -549,6 +567,7 @@
 
                       <tr>
                         <td>Garage, Yard, and Estate Sales</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -566,6 +585,7 @@
 
                       <tr>
                         <td>Another Code</td>
+                        <td><span class="light-text">Zoning</span></td>
                         <td width="100"><span class="light-text">§141.0302</span></td>
                         <td width="150">
                           <div class="table-controls-checkbox">
@@ -597,13 +617,14 @@
     <div class="modal-body">
 
       <div class="search-code-table">
-          <h4 class="table-title">Selected Codes</h4>
+          <h4 class="table-title">Selected Codes <small>- Search Selections</small> </h4>
           <div class="table-responsive">
             <table class="table">
 
               <tbody>
                 <tr>
                   <td>Companion Units and Junior Units</td>
+                  <td><span class="light-text">Zoning</span></td>
                   <td width="150"><span class="light-text">§141.0302</span></td>
                   <td width="130">
                     <div class="table-controls-link">
@@ -614,6 +635,7 @@
                 </tr>
                 <tr>
                   <td>Guest Quarters or Habitable Accessory Buildings</td>
+                  <td><span class="light-text">Zoning</span></td>
                   <td width="150"><span class="light-text">§141.0302</span></td>
                   <td width="130">
                     <div class="table-controls-link">
@@ -625,6 +647,7 @@
 
                 <tr>
                   <td>Live/Work Quarters</td>
+                  <td><span class="light-text">Zoning</span></td>
                   <td width="150"><span class="light-text">§141.0302</span></td>
                   <td width="130">
                     <div class="table-controls-link">
@@ -636,6 +659,7 @@
 
                 <tr>
                   <td>Watchkeeper’s Quarters</td>
+                  <td><span class="light-text">Zoning</span></td>
                   <td width="150"><span class="light-text">§141.0302</span></td>
                   <td width="130">
                     <div class="table-controls-link">
@@ -647,6 +671,7 @@
 
                 <tr>
                   <td>Transitional Housing Facilities</td>
+                  <td><span class="light-text">Zoning</span></td>
                   <td width="150"><span class="light-text">§141.0302</span></td>
                   <td width="130">
                     <div class="table-controls-link">
@@ -682,7 +707,7 @@
 </script>
 
 <script type="text/javascript">
-  $('.search-code-control input.form-control').bind('focus', function() {
+  $('.search-input .btn-light').on('click', function() {
       $('.search-code-control').addClass('show')
   })
   $('.search-code-control .search-dropdown-overlay').on('click', function() {
