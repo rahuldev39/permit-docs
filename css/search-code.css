@@ -41,12 +41,12 @@
   background-color: #DEE3EC;
   padding: 35px 25px
 }
-.search-code-table h4{
-  color: #121C4D;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 21px;
-  margin-bottom: 25px
+.search-code-table h4 {
+    color: #121C4D;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    white-space: nowrap;
 }
 .search-code-table h4 small {
     margin-left: 9px;
@@ -74,18 +74,20 @@
     position: relative;
     z-index: 1;
 }
-.search-input .search-code-input, .search-input .search-code-input:focus {
-    display: none;
-    border-top-left-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
+.search-input .search-code-input{
+  display: none;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border: 0px;
+  box-shadow: 0px 0px 0px 2px rgba(18,28,77,0.5) inset !important;
+      padding-left: 21px !important
+}
+.search-code-input, .search-code-input:focus {
     background-image: url(./../images/box-search.png);
     background-position: right 13px center;
     background-repeat: no-repeat;
     background-size: 20px;
-    border: 0px;
-    box-shadow: 0px 0px 0px 2px rgba(18,28,77,0.5) inset !important;
-    padding-left: 21px !important
 }
 
 .search-code-control.show .search-input .search-code-input{
@@ -186,16 +188,23 @@
     min-width: 212px;
     padding-top: 2px;
 }
-.search-input .btn-light,
-.search-input .btn-light:hover,
-.search-input .btn-light:active,
-.search-input .btn-light:focus {
-  border: 2px solid rgba(18,28,77,0.5) !important;
-  background-color: #FFFFFF !important;
-  box-shadow: 0 5px 5px 0 rgba(18,28,77,0.1);
-  color: #121C4D !important;
-  font-size: 14px;
-  font-weight: bold;
+.search-input .btn-light, .search-input .btn-light:hover, .search-input .btn-light:active, .search-input .btn-light:focus {
+    border: 2px solid rgb(59, 68, 110) !important;
+    background-color: #3b446f !important;
+    box-shadow: 0 5px 5px 0 rgba(18,28,77,0.1);
+    color: #efefef !important;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: auto;
+    white-space: nowrap;
+}
+.search-input .btn-group > span{
+  border: 2px solid rgba(18,28,77,0.5);
+  background-color: white;
+  border-radius: 0px 10px 10px 0px
+}
+.search-code-control.show .search-input .btn-group > span{
+  display: none;
 }
 .search-code-control.show .search-input .btn-light{
 
