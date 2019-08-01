@@ -101,51 +101,7 @@ color: rgba(18,28,77,0.5);
     margin-bottom: 0px;
     margin: 16px 0px;
 }
-.property-address-link{
-  width: 212px;
-  background-color: #121C4D;
-  margin-left: 32px
-}
-.property-address-link .btn {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 24px;
-    height: 100%;
-    padding: 0px 25px;
-}
-.property-address-link .btn span {
-    opacity: 0.75;
-    font-size: 12px;
-    line-height: 14px;
-    display: block;
-    margin-bottom: 2px
-}
-.property-address-link .dropdown-menu {
-    border: 1px solid #FFFFFF;
-    border-radius: 0 0 5px 5px;
-    background-color: #121C4D;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
-    width: 100%;
-    padding: 0px;
-    margin-top: 0px;
-}
-.property-address-link .dropdown-menu .dropdown-item,
-.property-address-link .dropdown-menu .dropdown-item:hover {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    text-align: center;
-    padding: 0px 0px;
-    line-height: 48px;
-    border-bottom: 1px solid white;
-    background-color: #121C4D;
-}
 
-.property-address-link .dropdown-menu .dropdown-item:last-child{
-  border-bottom: 0px
-}
 .icon-container {
     display: inline-block;
     margin-right: 10px;
