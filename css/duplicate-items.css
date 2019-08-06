@@ -1,0 +1,50 @@
+.duplicate-items-list ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.duplicate-items-list ul li {
+    border-bottom: 2px solid #cbcbcb;
+    margin-bottom: 0px;
+    padding: 10.5px 0 9.5px;
+}
+.duplicate-items-list ul li span {
+    color: #121C4D;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.custom-checkbox label{
+  position: relative;
+  margin-bottom: 0px
+}
+.custom-checkbox label input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox label input[type="checkbox"] + span {
+    display: inline-block;
+        padding-left: 20px;
+}
+.custom-checkbox label input[type="checkbox"] + span::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: 2px;
+    border-radius: 5px;
+}
+.custom-checkbox label input[type="checkbox"]:checked + span::after {
+    background-image: url(./../images/checkbox-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+.duplicate-items-modal .modal-body-inner p{
+  line-height: 50px;
+  margin-bottom: 15px
+}
+.duplicate-items-modal .modal-body-inner {
+  max-width: 100%
+}
