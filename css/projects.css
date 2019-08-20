@@ -132,8 +132,11 @@
 .right-btn .btn {
     padding: 0px 15.5px;
 }
-.location a{
-  margin-right: 29px
+.location a {
+    margin-right: 29px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 .projects-text h4 {
@@ -242,6 +245,15 @@
     font-size: 18px;
     margin-bottom: 15px;
     display: block;
+}
+.more-location{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
 }
 @media (max-width:992px) {
   .projects-header{

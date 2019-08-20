@@ -321,6 +321,74 @@ background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,
 .comment-popup .comment-list, .comment-popup .comment-base{
   padding: 25px !important
 }
+.highlighter-dropdown-box .btn-light{
+  width: 325px;
+  font-size: 16px
+}
+.highlighter-dropdown-box .btn-light img{
+  width: 15px
+}
+.highlighter-dropdown-box .btn-light:active, .highlighter-dropdown-box .btn-light:focus{
+  box-shadow: none;
+  background-color: #DEE3EC;
+}
+.highlighter-dropdown-box .btn-light span
+{
+  height: 100%;
+    display: block;
+    line-height: 50px;
+    border-left: 1px solid #121C4D;
+    margin-top: -1px;
+    padding-left: 15px;
+}
+.highlighter-dropdown-box .dropdown-menu {
+    width: 100%;
+    background-color: #dee3ec;
+    border: 0px;
+    padding: 0px;
+    margin-top: -14px;
+}
+.highlighter-dropdown-box .dropdown-menu .dropdown-item{
+  font-size: 14px;
+  font-weight: bold;
+  color: #121C4D;
+  border-bottom: 1px solid white;
+}
+.highlighter-dropdown-box .dropdown-menu .dropdown-item.active {
+    background-image: url(./../images/check-white.png);
+    background-color: transparent;
+    color: #121c4d !important;
+    background-repeat: no-repeat;
+    background-position: left 19px center;
+}
+.highlighter-dropdown-box .dropdown-menu .dropdown-item:last-child{
+    border-bottom: 0px;
+}
+.highlighter-dropdown-box .dropdown-menu .dropdown-item:hover{
+  background-color: transparent
+}
+.highlighter-dropdown-box .dropdown-menu span.color-indicator {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 13px;
+}
+.yellow{
+  background-color: #fbdf00
+}
+.green{
+  background-color: #449f5d
+}
+.blue{
+  background-color: #7ca2dd
+}
+.pink{
+  background-color: #f78c99
+}
+.purple{
+  background-color: #3a2c86
+}
 @media (max-width:992px){
   .code-result-content {
       padding-left: 32px;
