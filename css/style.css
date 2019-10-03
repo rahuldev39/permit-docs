@@ -5,7 +5,22 @@ body{
 html,body{
   height: 100%
 }
-
+.activity-text h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #121C4D;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+.activity-text span{
+font-size: 16px;
+font-weight: bold;
+color: rgba(18,28,77,0.5);
+}
+.activity-icon{
+  margin-right: 50px;
+  position: relative;
+}
 .bg-light {
     background-color: #ffffff!important;
     box-shadow: 0px 0px 7px #ececec40;
