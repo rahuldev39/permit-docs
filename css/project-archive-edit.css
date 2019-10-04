@@ -1,0 +1,140 @@
+.filter-bg {
+    background: linear-gradient(180deg, #6894D9 0%, #7297db 100%);
+    min-height: auto;
+    margin-bottom: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+.list-view {
+    padding: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+.separator {
+    height: 5px;
+    border-radius: 67px;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.filter-bg .box-header h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.filter-dropdown label{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 15px
+}
+.filter-dropdown .form-control{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    line-height: initial !important;
+    background-image: url(./../images/arrow-dropdown.png);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    font-size: 16px;
+    padding-left: 20px
+}
+.card-bg {
+  border-radius: 10px
+}
+.search-projects{
+  margin-bottom: 20px
+}
+.search-projects input.form-control {
+    border: 2px solid rgba(18,28,77,0.5);
+    box-shadow: none;
+    background-image: url(./../images/box-search.png);
+    background-repeat: no-repeat;
+    background-position: center left 25px;
+    padding-left: 55px;
+    font-size: 18px;
+}
+.delete-slected .btn {
+    color: #121C4D;
+    font-size: 14px;
+    min-width: auto;
+    height: auto;
+    padding: 0px;
+    font-weight: 500;
+}
+.projects-archive-table .table thead th{
+  border: 0px;
+  background-color: #DEE3EC;
+  padding: 25px 20px
+}
+.projects-archive-table .table thead th:first-child{
+  border-radius: 10px 0px 0px 0px
+}
+.projects-archive-table .table thead th:last-child{
+  border-radius: 0px 10px 0px 0px
+}
+.projects-archive-table .table tbody td{
+  padding: 10px 20px;
+  border-top: 2px solid  #DEE3EC;
+  border-right: 1px solid #DEE3EC;
+  vertical-align: middle;
+  color: rgba(18,28,77,0.5);
+  font-size: 16px;
+  font-weight: bold;		
+}
+.projects-archive-table .table tbody td:last-child{
+  padding-right: 0px;
+  border-right: 0px;
+}
+.custom-checkbox label {
+    position: relative;
+    margin-bottom: 0px;
+}
+.custom-checkbox label input[type="checkbox"] {
+    display: none;
+}
+.project-criteria-list ul li span {
+    color: #121C4D;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.custom-checkbox {
+  display: inline-block;
+}
+.custom-checkbox label input[type="checkbox"] + span {
+    display: inline-block;
+    padding-left: 20px;
+}
+.custom-checkbox label input[type="checkbox"] + span::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: 2px;
+    border-radius: 5px;
+}
+.custom-checkbox label input[type="checkbox"]:checked + span::after {
+    background-image: url(./../images/checkbox-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+.btn.btn-small{
+  min-width: 100px !important
+}
+.project-title input.form-control{
+  border: 2px solid rgba(18,28,77,0.5);
+    box-shadow: none;
+    width: 250px
+}
+.project-title h4{
+  margin: 0px;
+  color: #121C4D;
+  font-size: 16px;
+  font-weight: bold;
+}
