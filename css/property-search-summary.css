@@ -1,0 +1,88 @@
+.current-property-address{
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+}
+.expand-map{
+  left: 15px;
+  bottom: 15px;
+}
+.map-large{
+  height: 190px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all ease-in-out 300ms
+}
+.map-large.expand{
+  height: 318px;
+}
+.map-thumbs .row{
+  width: 96px
+}
+.map-thumbs a{
+  display: block;
+  padding: 2px;
+}
+.map-thumbs a.active img {
+    box-shadow: 0px 0px 0px 2px #121c4d;
+}
+.map-thumbs a img{
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.2);
+}
+.property-summary-card .card-body{
+  padding: 25px 50px
+}
+.property-summary-card h4.header-title{
+  color: #121C4D;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+}
+.property-list ul {
+    padding: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+.property-list ul li {
+    padding: 9px 25px;
+    background-color: white;
+    margin-bottom: 1px;
+}
+.property-list ul li:nth-child(2n){
+  background-color: #F5F4F7;
+  border-radius: 5px;
+}
+.property-list ul li label {
+    color: #121C4D;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    display: inline-block;
+    min-width: 45%;
+}
+.property-list ul li span {
+    color: #121C4D;
+    font-size: 16px;
+    line-height: 21px;
+}
+.property-summary-panel > .btn-light{
+  font-size: 20px
+}
+.property-summary-panel > .btn-light:not(.collapsed) img{
+      transform: rotate(180deg);
+}
+.btn .btn-badge{
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444444;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}

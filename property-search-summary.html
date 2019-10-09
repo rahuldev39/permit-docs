@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PermitDocs - Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/modal.css" rel="stylesheet">
+  <link href="./css/project-item.css" rel="stylesheet">
+  <link href="./css/property-search-summary.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="./images/box-search.png" alt="" width="17.5" class="mr-2"> Search
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./images/folder.png" alt="" width="17.5" class="mr-2"> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./images/code-library.png" alt="" width="21" class="mr-2"> Code Library</a>
+          </li>
+
+
+
+
+        </ul>
+
+        <ul class="navbar-nav nav-bar-right">
+          <li class="nav-item  dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="./images/bell-icon.png" alt="">
+              <div class=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right notification-dropdown" aria-labelledby="navbarDropdown">
+             <ul class="notification-list">
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/rocket-icon2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>New Project Created</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/pen1.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>Note Added</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/user2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>Project Shared</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/rocket-icon2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>New Project Created</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+             </ul>
+           </div>
+          </li>
+          <li class="nav-item dropdown user-dropdown">
+            <a class="nav-link user-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./images/user-img.png" alt="">
+                AAA Architects
+             </a>
+             <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">Plans</a>
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">Submit Feedback</a>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main-content">
+    <div class="container-fluid">
+
+
+      <div class="page-content mt-4">
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card box-view filter-bg">
+              <div class="card-body">
+                <ul class="list-view filter-list">
+                  <li>
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                      Search Again
+                      <img src="./images/plus-circle.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                      Save to Project
+                      <img src="./images/copy-icon.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                      View Project
+                      <img src="./images/plus-circle.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                      Create Report
+                      <img src="./images/trash-icon.png" alt="" width="18">
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <div class="box-header mb-3">
+                  <h4>Current Property</h4>
+                </div>
+
+                <div class="current-property-address">
+                  7285 Carrizo Drive, San Diego, La Jolla, CA 92037, USA
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="box-header mb-3">
+                  <h4>Property Menu:</h4>
+                </div>
+
+                <ul class="list-view filter-list">
+                  <li>
+                    <button class="btn btn-light d-flex align-items-center justify-content-between btn-block">
+                      Property Summary
+                      <img src="./images/location-icon.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light d-flex align-items-center justify-content-between btn-block">
+                      Zoning Summary
+                      <img src="./images/zoining-summary.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light d-flex align-items-center justify-content-between btn-block">
+                      Permit Summary
+                      <img src="./images/permit-summary.png" alt="" width="18">
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn btn-light d-flex align-items-center justify-content-between btn-block">
+                      Property Notes
+                      <span class="btn-badge">4</span>
+                    </button>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+
+            <div class="property-map-container d-flex">
+
+              <div class="map-large position-relative">
+                <div class="map">
+                  <img src="./images/property-map.png" alt="" class="img-fluid w-100">
+                </div>
+                <div class="expand-map position-absolute">
+                  <button class="btn btn-light d-flex align-items-center justify-content-between">
+                    <img src="./images/select-arrow.png" alt="" width="15">
+                    <span>Expand Map</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="map-thumbs ml-4">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <a href="#" class="active">
+                      <img src="./images/map1.png" alt="" width="44">
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a href="#">
+                      <img src="./images/loaction-img.png" alt="" width="44">
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a href="#">
+                      <img src="./images/map2.png" alt="" width="44">
+                    </a>
+                  </div>
+                  <div class="col-6 ">
+                    <a href="#">
+                      <img src="./images/map3.png" alt="" width="44">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="spacer"></div>
+
+            <div class="card border-0 property-summary-card mb-4">
+              <div class="card-body ">
+                <div class=" d-flex align-items-center justify-content-between">
+                  <h4 class="header-title">Property Summary</h4>
+                  <div class="d-flex align-items-center ">
+                    <button class="btn btn-light d-flex align-items-center justify-content-between">
+                      <img src="./images/select-arrow.png" alt="" width="15">
+                      <span>Expand All</span>
+                    </button>
+
+                    <a href="#" class="ml-4">
+                      <img src="./images/location-icon.png" alt="" width="35">
+                    </a>
+
+                  </div>
+                </div>
+
+
+                <div class="spacer"></div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel1">
+                    <span>Location</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list show" id="panel1">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel2">
+                    <span>FIPS Codes</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel2">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel3">
+                    <span>Owner Information</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel3">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel4">
+                    <span>Community Plan</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel4">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel5">
+                    <span>Sub-Division</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel5">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel6">
+                    <span>Legal Description</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel6">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel mb-3">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel7">
+                    <span>Market Value & Taxes</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel7">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="property-summary-panel">
+                  <button class="btn btn-light collapsed d-flex align-items-center justify-content-between btn-block" data-toggle="collapse" data-target="#panel8">
+                    <span>Building Information</span>
+                    <img src="./images/select-arrow.png" alt="" width="30">
+                  </button>
+                  <div class="collapse property-list" id="panel8">
+                        <ul>
+                          <li>
+                            <label>Property Type:</label>
+                            <span>Vacant Lot </span>
+                          </li>
+                          <li>
+                            <label>APN:</label>
+                            <span>104384</span>
+                          </li>
+                          <li>
+                            <label>Lot Size (Sq Ft / Acres):</label>
+                            <span>6,072 / 0.14</span>
+                          </li>
+                          <li>
+                            <label>Height Limits:</label>
+                            <span>35 ft</span>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/modal-cross.png" alt="">
+        </button>
+
+        <div class="search-project-content modal-body-inner text-center">
+          <div class="modal-icon">
+            <img src="./images/search-modal-icon.png" alt="">
+          </div>
+
+          <h4>Search for a Property</h4>
+
+          <div class="search-property-input">
+            <input type="text" class="form-control" placeholder="Search Property Address/APN">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+
+  <script type="text/javascript">
+    $(".expand-map .btn").on('click',function() {
+      $('.map-large').toggleClass('expand')
+    });
+  </script>
+
+
+</body>
+
+</html>
