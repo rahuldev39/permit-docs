@@ -201,3 +201,10 @@
 .group-items-header .btn{
   min-width: 275px
 }
+.add-projects-properties .btn {
+    color: #121C4D;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border: 3px dashed #121C4D;
+}
