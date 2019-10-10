@@ -209,3 +209,78 @@
     text-align: center;
     border: 3px dotted #121C4D;
 }
+.duplicate-items-list ul li span{
+  font-size: 16px !important
+}
+.manage-user-modal .modal-body-inner h4{
+  line-height: 50px
+}
+.code-library-collection-tabs {
+    max-width: 510px;
+    margin: 0 auto;
+}
+.code-library-collection-tabs .collection-tab{
+  border: 1px solid #121C4D;
+  min-height: 265px;
+  border-radius: 10px;
+  padding: 30px 20px
+}
+.code-library-collection-tabs .collection-tab h4{
+  color: #3E3E3C;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+.code-library-collection-tabs .collection-tab span{
+  color: #3E3E3C;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.upload-container{
+  border: 1px dashed #253746;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 18px;
+}
+.upload-item-header-text h5{
+font-size: 24px;
+}
+.upload-item-header-header .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+}
+ul.file-upload-list{
+  list-style-type: none;
+}
+ul.file-upload-list li{
+  border: 1px solid rgba(37,55,70,0.5);
+  border-radius: 6px;
+
+  padding: 15px 25px
+}
+ul.file-upload-list li:hover{
+  box-shadow: 0 0 0 1px rgba(37,55,70,0.25);
+}
+.delete-file .btn{
+  min-width: auto
+}
+.file-info h4{
+  color: #253746;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.file-info span{
+  color: #253746;
+  font-size: 16px;
+  line-height: 19px;
+}

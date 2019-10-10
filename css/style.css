@@ -89,6 +89,30 @@ color: rgba(18,28,77,0.5);
 .nav-bar-right li{
   border-left: 1px solid #BCC1CF;
 }
+.text-blue{
+  color: #121C4D
+}
+.bordered-control{
+  border: 2px solid rgba(18,28,77,0.5) !important;
+  box-shadow: none !important
+}
+.form-control.arrow-select{
+  -webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+line-height: initial !important;
+background-image: url(./../images/select-arrow.png);
+background-repeat: no-repeat;
+background-position: center right 12px;
+}
+.row.gutters-small{
+  margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.row.gutters-small > div{
+  padding-right: 7.7px;
+    padding-left: 7.5px;
+}
 .property-address-link{
   width: 212px;
   background-color: #121C4D;
@@ -336,6 +360,31 @@ textarea.form-control {
     line-height: normal;
     font-size: 12px;
     text-align: center;
+}
+.table-light-header{
+  border-bottom: 2px solid #DEE3EC;
+}
+.table-light-header.table thead th {
+    border: 0px;
+    background-color: #DEE3EC;
+    padding: 25px 20px;
+}
+.table-light-header.table thead th:first-child {
+    border-radius: 10px 0px 0px 0px;
+}
+.table-light-header.table thead th:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+.table-light-header.table tr td{
+  color: #121C4D;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-top: 2px solid #DEE3EC;
+}
+.table-light-header.table tbody td:last-child {
+    padding-right: 0px;
+    border-right: 0px;
 }
 @media (min-width:992px){
 

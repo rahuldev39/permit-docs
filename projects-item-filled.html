@@ -16,6 +16,7 @@
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/modal.css" rel="stylesheet">
   <link href="./css/project-item.css" rel="stylesheet">
+  <link href="./css/duplicate-items.css" rel="stylesheet">
 </head>
 
 <body>
@@ -151,19 +152,19 @@
                     </button>
                   </li>
                   <li>
-                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block" data-toggle="modal" data-target="#duplicate-items-modal">
                       Copy Project
                       <img src="./images/copy-icon.png" alt="" width="18">
                     </button>
                   </li>
                   <li>
-                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block" data-toggle="modal" data-target="#manage-user-modal">
                       Manage Users
                       <img src="./images/plus-circle.png" alt="" width="18">
                     </button>
                   </li>
                   <li>
-                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block" data-toggle="modal" data-target="#delete-item-modal">
                       Delete Project
                       <img src="./images/trash-icon.png" alt="" width="18">
                     </button>
@@ -234,15 +235,15 @@
                 <div class="d-flex align-items-center justify-content-between">
                   <h5>Group</h5>
                   <div class="group-controls-list">
-                    <button class="btn d-inline-flex align-items-center">
+                    <button class="btn d-inline-flex align-items-center" data-toggle="modal" data-target="#invite-user-modal">
                       <img src="./images/share-dark.png" alt="" width="18" class="mr-2">
                       <span>Share Group</span>
                     </button>
-                    <button class="btn d-inline-flex align-items-center">
+                    <button class="btn d-inline-flex align-items-center" data-toggle="modal" data-target="#duplicate-items-modal">
                       <img src="./images/copy-icon-dark.png" alt="" width="18" class="mr-2">
                       <span>Duplicate Group</span>
                     </button>
-                    <button class="btn d-inline-flex align-items-center">
+                    <button class="btn d-inline-flex align-items-center" data-toggle="modal" data-target="#clear-group-modal">
                       <img src="./images/trash.png" alt="" width="18" class="mr-2">
                       <span>Clear Group</span>
                     </button>
@@ -288,7 +289,7 @@
                             <img src="./images/pencil-icon.png" alt="" width="18" class="mr-2">
                             <span>Rename</span>
                           </button>
-                          <button class="btn d-inline-flex align-items-center">
+                          <button class="btn d-inline-flex align-items-center" data-toggle="modal" data-target="#delete-item-modal">
                             <img src="./images/trash.png" alt="" width="18" class="mr-2">
                             <span>Delete</span>
                           </button>
@@ -304,7 +305,7 @@
                 <div class="card-body">
                   <div class="group-items-header d-flex align-items-center justify-content-between">
                     <h4>Codes</h4>
-                    <button class="btn btn-primary d-flex align-items-center justify-content-between">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#select-collection-modal">
                       Add Group
                       <img src="./images/plus-circle.png" alt="" width="18">
                     </button>
@@ -361,7 +362,7 @@
                 <div class="card-body">
                   <div class="group-items-header d-flex align-items-center justify-content-between">
                     <h4>Codes</h4>
-                    <button class="btn btn-primary d-flex align-items-center justify-content-between">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#upload-item-modal">
                       Add Group
                       <img src="./images/plus-circle.png" alt="" width="18">
                     </button>
@@ -611,7 +612,7 @@
 
 
   <!-- Modal -->
-<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade invite-user-modal" id="invite-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
@@ -620,26 +621,382 @@
           <img src="./images/modal-cross.png" alt="">
         </button>
 
-        <div class="search-project-content modal-body-inner text-center">
-          <div class="modal-icon">
-            <img src="./images/search-modal-icon.png" alt="">
-          </div>
+        <div class="search-project-content modal-body-inner">
 
-          <h4>Search for a Property</h4>
+          <h4 class="text-center">Invite Users</h4>
 
-          <div class="search-property-input">
-            <input type="text" class="form-control" placeholder="Search Property Address/APN">
-          </div>
+            <div class="row gutters-small">
+                <div class="col-md-6">
+                    <div class="row gutters-small">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control bordered-control" placeholder="First Name">
+                        </div>
+
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control bordered-control" placeholder="Last Name">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control bordered-control" placeholder="Email">
+                  </div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+              <button class="btn btn-primary">Add Another User</button>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control bordered-control arrow-select" name="">
+                <option value="">Select Role</option>
+                <option value="">Role 1</option>
+                <option value="">Role 2</option>
+                <option value="">Role 3</option>
+              </select>
+            </div>
 
         </div>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
-        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary">Invite Users</button>
       </div>
     </div>
   </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade duplicate-items-modal" id="duplicate-items-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+      <div class="modal-body-inner text-center">
+
+        <h4>Copy this Item?</h4>
+        <p>We’ll create a copy of the item.</p>
+        <div class="">
+          <input type="text" class="form-control bordered-control" placeholder="Copy of [Item Name]">
+        </div>
+        <div class="duplicate-items-list mb-4">
+          <ul>
+            <li class="d-flex flex-row justify-content-between align-items-center">
+              <span>Duplicate Sub-items</span>
+              <div class="custom-checkbox">
+                <b class="mr-2 text-blue">Select All</b>
+                <label>
+
+                  <input type="checkbox" name="" checked="">
+                  <span></span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="d-flex flex-row justify-content-between align-items-center mb-2">
+                <span class="font-weight-normal">Group 1</span>
+                <div class="custom-checkbox">
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <span class="font-weight-normal">Group 2</span>
+                <div class="custom-checkbox">
+                  <label>
+                    <input type="checkbox" name="" value="">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex flex-row justify-content-between align-items-center">
+              <span>Duplicate Notes</span>
+              <div class="custom-checkbox">
+                <label>
+                  <input type="checkbox" name="" value="">
+                  <span></span>
+                </label>
+              </div>
+            </li>
+            <li class="d-flex flex-row justify-content-between align-items-center">
+              <span>Duplicate Codes</span>
+              <div class="custom-checkbox">
+                <label>
+                  <input type="checkbox" name="" value="">
+                  <span></span>
+                </label>
+              </div>
+            </li>
+            <li class="d-flex flex-row justify-content-between align-items-center">
+              <span>Duplicate Notes from Codes</span>
+              <div class="custom-checkbox">
+                <label>
+                  <input type="checkbox" name="" value="">
+                  <span></span>
+                </label>
+              </div>
+            </li>
+            <li class="d-flex flex-row justify-content-between align-items-center">
+              <span>Duplicate Users on Project</span>
+              <div class="custom-checkbox">
+                <label>
+                  <input type="checkbox" name="" value="">
+                  <span></span>
+                </label>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="btn-container text-center">
+          <button class="btn btn-primary">Copy</button>
+          <button class="btn btn-light">Cancel</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade clear-group-modal" id="clear-group-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+
+      <div class="modal-body-inner no-footer text-center">
+        <div class="modal-icon">
+          <img src="./images/project-update.png" alt="">
+        </div>
+
+        <h4>Are You Sure You Want to Clear All? </h4>
+        <p>This action will remove all current items</p>
+          <div class="spacer"></div>
+        <div class="btn-container text-center">
+          <button class="btn btn-primary">Yes, Clear All</button>
+          <button class="btn btn-light">Search Properties</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade delete-item-modal" id="delete-item-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+
+      <div class="modal-body-inner no-footer text-center">
+        <div class="modal-icon">
+          <img src="./images/delete-item.png" alt="" width="90">
+        </div>
+
+        <h4>Are You Sure You Want to Delete This Item?</h4>
+        <p>This action cannot be undone.</p>
+          <div class="spacer"></div>
+        <div class="btn-container text-center">
+          <button class="btn btn-primary">Yes, Delete It</button>
+          <button class="btn btn-light">Search Properties</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade manage-user-modal" id="manage-user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body pt-4">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+      <div class="modal-body-inner mw-100">
+
+        <h4 class="text-center mb-4">Manage Users</h4>
+
+        <div class="manage-collaborators">
+          <div class="table-responsive">
+            <table class="table table-light-header">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>Prashanth Tondapu</td>
+                  <td>Invitation Pending</td>
+
+                  <td class="text-right">
+                    <button class="btn btn-primary btn-small px-3 d-inline-flex">
+                      <span class="mr-2">Resend Invite</span>
+                      <img src="./images/envelope-white.png" alt="" width="14.89" class="mr-2">
+                    </button>
+                    <button  class="btn btn-primary btn-small ml-2 d-inline-flex">
+                      <span class="mr-2">Remove User</span>
+                      <img src="./images/cross-light.png" alt="" width="18" class="mr-2">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ryan Vice</td>
+                  <td>Invite Accepted</td>
+                  <td class="text-right">
+                    <button class="btn btn-primary btn-small d-inline-flex">
+                      <span class="mr-2">Remove User</span>
+                      <img src="./images/cross-light.png" alt="" width="18" class="mr-2">
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Invite Users</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade select-collection-modal" id="select-collection-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+
+      <div class="modal-body-inner no-footer text-center">
+
+        <h4>Select Collection or Create New</h4>
+        <p>You can select an existing code collection, or create a new one for this project.</p>
+          <div class="spacer"></div>
+
+          <div class="code-library-collection-tabs">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="collection-tab d-flex flex-column">
+                  <div class="mb-auto mt-auto">
+                    <img src="./images/select-collection.png" alt="" width="84.5">
+                  </div>
+                  <h4 class="mb-2">Select Collection</h4>
+                  <span>Use an existing set of codes</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="collection-tab d-flex flex-column">
+                  <div class="mb-auto mt-auto">
+                    <img src="./images/create-collection.png" alt="" width="75">
+                  </div>
+                  <h4  class="mb-2">Create Collection</h4>
+                  <span>Perform a new code search</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade upload-item-modal" id="upload-item-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header upload-item-header-header">
+      <div class="upload-item-header-text">
+        <h5>Select Codes</h5>
+      </div>
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./images/modal-cross.png" alt="">
+      </button>
+    </div>
+    <div class="sub-header">
+      <div class="upload-container">
+        <strong>Drop file here to upload or <a href="#">select file</a></strong>
+      </div>
+    </div>
+    <div class="modal-body">
+
+      <ul class="file-upload-list p-0">
+        <li class="d-flex align-items-center justify-content-between">
+          <div class="file-info">
+            <h4 class="mb-1">document.pdf</h4>
+            <span>12.3 MB</span>
+          </div>
+          <div class="delete-file">
+            <button class="btn p-0 d-flex align-items-center">
+              <img src="./images/trash.png" alt="" width="16" class="mr-2">
+               Delete
+            </button>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="modal-footer justify-content-between">
+      <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
 </div>
 
 
