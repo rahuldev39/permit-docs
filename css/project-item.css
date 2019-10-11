@@ -284,3 +284,27 @@ ul.file-upload-list li:hover{
   font-size: 16px;
   line-height: 19px;
 }
+@media (max-width:768px){
+  .group-items-content ul li {
+    display: block !important;
+  }
+  .group-items-content ul li h4{
+    margin-bottom: 15px
+  }
+}
+@media (max-width:600px){
+
+.group-header .d-flex:first-child{
+  display: block !important;
+}
+.group-header .group-controls-list .btn{
+  margin-left: 0px;
+  margin-right: 25px
+}
+.group-header .group-controls-list{
+  margin-top: 25px
+}
+.group-items-header .btn{
+    min-width:  150px !important
+}
+}
