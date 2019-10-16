@@ -75,6 +75,10 @@ color: #121C4D;
   background-color: #DEE3EC;
     padding: 35px 25px;
 }
+.btn-dropdown {
+    border: 2px solid rgba(18,28,77,0.5);
+    color: #888da5;
+}
 /*##############----create project modal-----#################*/
 .search-project-content {
     min-height: 345px;

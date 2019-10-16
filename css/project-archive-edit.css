@@ -81,7 +81,7 @@
   vertical-align: middle;
   color: rgba(18,28,77,0.5);
   font-size: 16px;
-  font-weight: bold;		
+  font-weight: bold;
 }
 .projects-archive-table .table tbody td:last-child{
   padding-right: 0px;
@@ -124,6 +124,20 @@
     background-position: center;
     background-size: 14px;
 }
+.custom-checkbox.checkbox-lg label input[type="checkbox"] + span::after{
+  height: 30px;
+  width: 30px;
+}
+.custom-checkbox.checkbox-lg label input[type="checkbox"]:checked + span::after{
+  background-size: 25.71px;
+}
+.custom-checkbox.checkbox-lg label input[type="checkbox"] + span{
+  line-height: 32px;
+  padding-left: 40px;
+  font-size: 16px;
+  color: rgba(18,28,77,0.5);
+  font-weight: bold;
+}
 .btn.btn-small{
   min-width: 100px !important
 }
@@ -137,4 +151,41 @@
   color: #121C4D;
   font-size: 16px;
   font-weight: bold;
+}
+.project-title span.save-date{
+  font-size: 12px;
+
+}
+.form-box-centered{
+  max-width: 558px;
+  margin: 0 auto;
+}
+.btn-dropdown-content {
+    border: 2px solid rgba(18,28,77,0.5);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    border-top: 0px;
+}
+.btn-dropdown-content .dropdown-divider{
+  border-top: 2px solid rgba(18,28,77,0.5);
+}
+.btn-dropdown-content strong
+{
+  font-size: 16px;
+}
+.dropdown.show .btn-dropdown{
+  border-radius: 10px 10px 0px 0px
+}
+.btn-dropdown:active, .btn-dropdown:focus{
+  outline: none;
+  box-shadow: none
+}
+.btn-dropdown-content .dropdown-header .btn{
+  min-width: auto !important;
+    height: 30px;
+    line-height: 30px;
+        font-size: 16px;
+}
+.add-item--modal .no-footer.modal-body-inner {
+    min-height: calc( 272px + 80px);
 }
