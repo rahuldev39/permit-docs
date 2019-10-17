@@ -137,19 +137,34 @@
           <h2>Code Results </h2>
           <div class="header-control">
             <div class="control-list">
-              <button class="btn btn-primary d-flex align-items-center justify-content-between">
-                Contact City
-                <img src="./images/droparrow-white.png" alt="" width="18">
-              </button>
-              <button class="btn btn-primary d-flex align-items-center justify-content-between">
-                Export Codes
-                <img src="./images/droparrow-white.png" alt="" width="18">
-              </button>
-              <button class="btn btn-primary d-flex align-items-center justify-content-between">
+              <div class="dropdown">
+                <button class="btn btn-primary d-flex align-items-center justify-content-between" data-toggle="dropdown">
+                  Contact City
+                  <img src="./images/droparrow-white.png" alt="" width="18">
+                </button>
+                <div class="dropdown-menu dropdown-box w-100 p-0 text-center" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">555-555-5555</a>
+                  <a class="dropdown-item" href="#">Email City</a>
+                </div>
+              </div>
+
+              <div class="dropdown ml-4">
+                <button class="btn btn-primary d-flex align-items-center justify-content-between" data-toggle="dropdown">
+                  Export Codes
+                  <img src="./images/droparrow-white.png" alt="" width="18">
+                </button>
+                <div class="dropdown-menu dropdown-box w-100 p-0 text-center" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Select Code</a>
+                  <a class="dropdown-item" href="#">Export All</a>
+                </div>
+              </div>
+
+
+              <button class="btn btn-primary d-flex align-items-center justify-content-between ml-4">
                 Save as Collection
                 <img src="./images/collection-icon.svg" alt="" width="18">
               </button>
-              <button class="btn btn-primary d-flex align-items-center justify-content-between">
+              <button class="btn btn-primary d-flex align-items-center justify-content-between ml-4">
                 Save to Project
                 <img src="./images/save-project-icon.png" alt="" width="18">
               </button>

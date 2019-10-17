@@ -386,7 +386,23 @@ textarea.form-control {
     padding-right: 0px;
     border-right: 0px;
 }
-
+.dropdown-box {
+    border: 1px solid #121c4d;
+    border-radius: 0px 0px 6px 6px;
+    margin-top: -5px;
+    overflow: hidden;
+}
+.dropdown-box .dropdown-item {
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid #121c4d;
+    color: #121c4d;
+    padding: 15px 0px;
+    line-height: 16px;
+}
+.dropdown-box .dropdown-item:last-child{
+  border-bottom: 0px
+}
 @media (min-width:992px){
 
 }
