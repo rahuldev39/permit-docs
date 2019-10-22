@@ -1,0 +1,86 @@
+.code-result-header{
+  background: linear-gradient(180deg, #6894D9 0%, #AFD9E5 100%);
+  border-radius: 10px;
+  padding: 30px 25px;
+
+  background-position: bottom;
+}
+.page-header-top h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 37px;
+    margin-bottom: 0px;
+}
+.control-list {
+    display: flex;
+    align-items: center;
+}
+.btn-dropdown-content {
+    border: 2px solid rgba(18,28,77,0.5);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    border-top: 0px;
+}
+
+.dropdown.show .btn-dropdown{
+  border-radius: 10px 10px 0px 0px
+}
+.btn-dropdown:active, .btn-dropdown:focus{
+  outline: none;
+  box-shadow: none
+}
+.custom-checkbox label {
+    position: relative;
+    margin-bottom: 0px;
+}
+.custom-checkbox label input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox {
+  display: inline-block;
+}
+.custom-checkbox label input[type="checkbox"] + span {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #121c4d;
+}
+.custom-checkbox label input[type="checkbox"] + span::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #121C4D;
+    left: 0px;
+    top: 2px;
+    border-radius: 5px;
+}
+.custom-checkbox label input[type="checkbox"]:checked + span::after {
+    background-image: url(./../images/checkbox-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+.btn-dropdown-content .dropdown-item{
+  border-bottom: 2px solid rgba(18,28,77,0.5)
+}
+.btn-dropdown-content .dropdown-item:last-child{
+  border-bottom: 0px
+}
+.project-title h4 {
+    margin: 0px;
+    color: #121C4D;
+    font-size: 16px;
+    font-weight: bold;
+}
+.code-search-header .btn{
+  height: 30px;
+  min-width: 262px
+}
+.code-search-header h4{
+  color: #121C4D;
+  font-size: 24px;
+  font-weight: bold;
+}

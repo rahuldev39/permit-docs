@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PermitDocs - Projects</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/modal.css" rel="stylesheet">
+  <link href="./css/code-search.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="./images/box-search.png" alt="" width="17.5" class="mr-2"> Search
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./images/folder.png" alt="" width="17.5" class="mr-2"> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./images/code-library.png" alt="" width="21" class="mr-2"> Code Library</a>
+          </li>
+
+
+
+
+        </ul>
+
+        <ul class="navbar-nav nav-bar-right">
+          <li class="nav-item  dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="./images/bell-icon.png" alt="">
+              <div class=""></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right notification-dropdown" aria-labelledby="navbarDropdown">
+             <ul class="notification-list">
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/rocket-icon2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>New Project Created</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/pen1.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>Note Added</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/user2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>Project Shared</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+               <li>
+                 <a href="#">
+                   <div class="list-item">
+                      <div class="activity-icon">
+                        <img src="./images/rocket-icon2.png" alt="">
+                      </div>
+                      <div class="activity-text">
+                        <h4>New Project Created</h4>
+                        <span>02/06/2019 at 12:13PM</span>
+                      </div>
+                    </div>
+                 </a>
+               </li>
+             </ul>
+           </div>
+          </li>
+          <li class="nav-item dropdown user-dropdown">
+            <a class="nav-link user-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./images/user-img.png" alt="">
+                AAA Architects
+             </a>
+             <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Account</a>
+                <a class="dropdown-item" href="#">Plans</a>
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">Submit Feedback</a>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="main-content">
+    <div class="container-fluid">
+
+      <div class="page-header-dark code-result-header my-4">
+        <div class="d-flex flex-row justify-content-between align-items-center page-header-top mb-0">
+          <h2>Code Search </h2>
+          <div class="header-control">
+            <div class="control-list">
+              <button class="btn btn-primary d-flex align-items-center justify-content-between ">
+                Save as Collection
+                <img src="./images/collection-icon.svg" alt="" width="18">
+              </button>
+              <button class="btn btn-primary d-flex align-items-center justify-content-between ml-4">
+                Save to Project
+                <img src="./images/save-project-icon.png" alt="" width="18">
+              </button>
+              <button class="btn btn-primary d-flex align-items-center justify-content-between btn-block ml-4">
+                View Codes
+                <img src="./images/search-white.png" alt="" width="18">
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="page-content">
+
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <select class="form-control bordered-control arrow-select" name="">
+              <option value="">San Diego</option>
+              <option value="">Role 1</option>
+              <option value="">Role 2</option>
+              <option value="">Role 3</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button data-display="static" type="button" class="btn btn-default d-flex align-items-center justify-content-between btn-block btn-dropdown bg-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select Filter
+                <img src="./images/select-arrow.png" alt="" width="22.5">
+              </button>
+                <ul class="dropdown-menu btn-dropdown-content w-100 p-0" aria-labelledby="dropdownMenuLink">
+                  <li class="dropdown-item  px-2 py-3">
+                    <div class="custom-checkbox checkbox-lg">
+                      <label>
+                        <input type="checkbox" name="" checked="">
+                        <span class="pl-4"> Miles Family Residence </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="dropdown-item  px-2 py-3">
+                    <div class="custom-checkbox checkbox-lg">
+                      <label>
+                        <input type="checkbox" name="" checked="">
+                        <span class="pl-4"> Johnson Family Residence</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="search-input">
+              <input type="text" class="form-control bordered-control" placeholder=" Search Codes">
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 " style="min-height:700px">
+          <div class="table-responsive">
+            <table class="table table-light-header table-table-condensed table-bordered">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="">
+                            <span></span>
+                          </label>
+                        </div>
+                        Collection Title
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center text-muted">
+                        Preview All
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2 opac-half">
+                      </div>
+                    </div>
+                  </th>
+
+                  <th width="100" class="text-center text-muted">Section</th>
+                  <th width="150" class="text-center text-muted">Code Type</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+
+                <tr>
+                  <td class="border-left-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="project-title d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="" value="">
+                            <span></span>
+                          </label>
+                        </div>
+                          Concrete Liner for Waste Water
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        Preview
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2">
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="text-center text-muted">§141.0302</td>
+                  <td class="text-center text-muted">Zoning Code</td>
+                </tr>
+
+                <tr>
+                  <td class="border-left-0" colspan="4">
+                    <p class="mb-0 font-weight-normal">A Companion Unit is a detached or attached accessory structure on a residential lot that provides living facilities for one or more persons, independent of the primary dwelling unit, which includes permanent provisions for living, sleeping and cooking. A Junior Liner is an accessory structure that is contained entirely within an existing, habitable single dwelling unit. General Regulations for Companion and Junior Units can be found in SDMC Ch. 14, Article 01, Division 03.</p>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="row code-search-header justify-content-between mb-4">
+          <div class="col-md-6">
+            <h4 class="mb-4">Selected Codes</h4>
+            <div class="search-input">
+              <input type="text" class="form-control bordered-control" placeholder=" Search Codes">
+            </div>
+          </div>
+          <div class="col-md-4  text-md-right">
+            <button type="button" class="btn btn-primary mb-2">
+                Clear All Selected
+            </button>
+            <button type="button" class="btn btn-primary">
+                Update Codes
+            </button>
+          </div>
+        </div>
+
+
+        <div class="card border-0 mb-4" style="min-height:700px">
+          <div class="table-responsive">
+            <table class="table table-light-header table-table-condensed table-bordered">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="">
+                            <span></span>
+                          </label>
+                        </div>
+                        Collection Title
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center text-muted">
+                        Preview All
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2 opac-half">
+                      </div>
+                    </div>
+                  </th>
+
+                  <th width="100" class="text-center text-muted">Section</th>
+                  <th width="150" class="text-center text-muted">Code Type</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+
+                <tr>
+                  <td class="border-left-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="project-title d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="" value="">
+                            <span></span>
+                          </label>
+                        </div>
+                          Companion Units and Junior Units
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        Preview
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2">
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="text-center text-muted">§141.0302</td>
+                  <td class="text-center text-muted">Zoning Code</td>
+                </tr>
+
+                <tr>
+                  <td class="border-left-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="project-title d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="" value="">
+                            <span></span>
+                          </label>
+                        </div>
+                          Companion Units and Junior Units
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        Preview
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2">
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="text-center text-muted">§141.0302</td>
+                  <td class="text-center text-muted">Zoning Code</td>
+                </tr>
+
+                <tr>
+                  <td class="border-left-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="project-title d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="" value="">
+                            <span></span>
+                          </label>
+                        </div>
+                          Companion Units and Junior Units
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        Preview
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2">
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="text-center text-muted">§141.0302</td>
+                  <td class="text-center text-muted">Zoning Code</td>
+                </tr>
+
+                <tr>
+                  <td class="border-left-0">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="project-title d-flex align-items-center">
+                        <div class="custom-checkbox mr-4">
+                          <label>
+                            <input type="checkbox" name="" checked="" value="">
+                            <span></span>
+                          </label>
+                        </div>
+                          Companion Units and Junior Units
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        Preview
+                        <img src="./images/select-arrow.png" alt="" width="14" class="ml-2">
+                      </div>
+                    </div>
+                  </td>
+
+                  <td class="text-center text-muted">§141.0302</td>
+                  <td class="text-center text-muted">Zoning Code</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- Modal -->
+<div class="modal fade create-project-modal" id="create-project-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./images/modal-cross.png" alt="">
+        </button>
+
+        <div class="search-project-content modal-body-inner text-center">
+          <div class="modal-icon">
+            <img src="./images/search-modal-icon.png" alt="">
+          </div>
+
+          <h4>Search for a Property</h4>
+
+          <div class="search-property-input">
+            <input type="text" class="form-control" placeholder="Search Property Address/APN">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/dropdown.js"></script>
+  <script type="text/javascript">
+  $('.code-result-aside-toogle').on('click', function() {
+      $('.code-result-aside').toggleClass('hide')
+  })
+  </script>
+
+
+</body>
+
+</html>
