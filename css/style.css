@@ -34,8 +34,23 @@ color: rgba(18,28,77,0.5);
     font-weight: bold;
     color: #121C4D !important;
 }
-.navbar-v2  .nav-link {
-    font-size: 18px;
+.navbar-v2 .nav-link{
+  font-size: 18px;
+}
+.navbar-v2 ul:not(.nav-bar-right) li.nav-item  .nav-link {
+    padding: 0px 2.3px !important;
+    min-width: 105px;
+}
+.navbar-v2 ul:not(.nav-bar-right) li.nav-item  .nav-link img{
+  position: relative;
+  top: -2px
+}
+.navbar-v2 ul:not(.nav-bar-right) li.nav-item{
+  margin-right: 20px;
+}
+.navbar-v2 .navbar-brand {
+    margin-right: 51px;
+    margin-left: 25px;
 }
 .navbar-light .navbar-nav .nav-item {
   display: flex;
