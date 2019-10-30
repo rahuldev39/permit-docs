@@ -500,6 +500,15 @@ width: 100%;
 .btn-block{
   min-width: 100%
 }
+footer p{
+  color: #121C4D;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer a{
+    color: #121C4D;
+    text-decoration: underline;
+}
 @media (min-width:992px){
 
 }
