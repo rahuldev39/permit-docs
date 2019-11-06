@@ -1,0 +1,194 @@
+.plan-info-container{
+  color: #121C4D;
+}
+.plan-info-container h4{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 20px
+}
+.plan-info-container p{
+  font-size: 14px;
+  line-height: 24px;
+}
+.table thead th {
+    border-bottom: 0px;
+}
+.table thead{
+  border-radius: 5px 5px 0 0;
+
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+  color: white
+}
+.table thead th{
+  background-color: #121C4D;
+}
+table th:first-child{
+  border-radius:6px 0 0 0px;
+}
+
+table th:last-child{
+  border-radius:0 6px 0px 0;
+}
+.table th {
+    padding: 15px 25px;
+}
+.table td {
+    padding: 30px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #121C4D;
+    border-top: 1px solid #bcc1cf;
+}
+.table-controls-link{
+    color: #121C4D;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+
+}
+.table-controls-link img{
+  margin-left: 18px;
+
+}
+.table-controls-link:hover{
+  opacity: 1;
+  color: #121C4D;
+  text-decoration: none;
+}
+.table{
+  margin-bottom: 0px
+}
+.table tbody tr:last-child{
+  border-bottom: 1px solid #bcc1cf;
+}
+.table-head{
+  border-radius: 5px 5px 0 0;
+  background-color: #121C4D;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+  padding: 15px 25px
+
+}
+.table-head h4{
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0px
+}
+.edit-pay-btn {
+    min-width: 325px;
+}
+.billing-details .table td{
+  border-top: 0px;
+  padding: 0px 10px;
+  font-size: 22px;
+  vertical-align: middle;
+  position: relative;
+}
+.billing-details .table td h4{
+  min-width: 84px;
+  text-align: right;
+  font-weight: bold;
+}
+.billing-details .table td span{
+  font-weight: 500;
+}
+tr.billing-header td{
+  line-height: 75px;
+  padding: 10px 10px 1px 10px !important;
+}
+.billing-details td img{
+  height: 40px;
+  object-fit: contain;
+}
+.basic-tab{
+  	background-color: #6C97D9;
+    border-radius: 6px 6px 0px 0px
+}
+.billing-details .card{
+  overflow: hidden;
+  border: 0px !important;
+  box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
+  border-radius: 10px
+}
+.billing-border-bottom{
+  padding: 20px 0px;
+}
+.billing-border-bottom::after {
+  content: "";
+  height: 2px;
+  background-color:  #DEE3EC;
+  border-radius: 2px;
+  bottom: 0px;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  margin: 0 auto;
+}
+.billing-details {
+  font-weight: 600 !important;
+}
+.billing-details h4{
+  font-weight: 700 !important;
+}
+.subscription-block .card label{
+  cursor: pointer;
+}
+.subscription-block .card label .plan-type{
+  padding: 0px 25px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 85px;
+}
+.subscription-block .card label .plan-type::before{
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #DEE3EC;
+  position: absolute;
+  left: 25px
+}
+.subscription-block .card label input[type="radio"]:checked + .plan-type::before{
+  background-image: url(./../images/check-icon-b.png);
+  background-color: #6C97D9;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subscription-price{
+  padding: 0px 15px;
+  background-color: #DEE3EC;
+  min-height: 110px
+}
+.subscription-price h4{
+  min-width: 80px
+}
+.dollar{
+  top: 5px
+}
+
+.subscription-block .card label input[type="radio"]:checked + .plan-type{
+  background-color: #121C4D;
+  color: white
+}
+.subscription-form label{
+  font-weight: 700;
+  margin-bottom: 10px
+}
+.monthly-pricing-summary{
+  border: 1px solid #121C4D;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 700;
+}
+.monthly-pricing-summary h1{
+  font-size: 100px;
+
+}
+.monthly-pricing-summary h1 .dollar {
+    top: 24px;
+}
