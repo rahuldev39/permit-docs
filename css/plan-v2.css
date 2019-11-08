@@ -99,14 +99,16 @@ tr.billing-header td{
   line-height: 75px;
   padding: 10px 10px 1px 10px !important;
 }
-.billing-details td img{
+.billing-details td span.plan-check{
+  display: inline-block;
   height: 40px;
-  object-fit: contain;
+  width: 33px;
+  background-image:url(./../images/checkbox-check.png);
+  background-repeat: no-repeat;
+  background-size: 33px;
+  background-position: center;
 }
-.basic-tab{
-  	background-color: #6C97D9;
-    border-radius: 6px 6px 0px 0px
-}
+
 .billing-details .card{
   overflow: hidden;
   border: 0px !important;
@@ -191,4 +193,24 @@ tr.billing-header td{
 }
 .monthly-pricing-summary h1 .dollar {
     top: 24px;
+}
+
+
+.billing-header .paln-tab{
+  cursor: pointer;
+}
+.premium-plan .paln-tab:not(.premium-tab) ,
+.basic-plan .paln-tab:not(.basic-tab) {
+  	background-color: #6C97D9;
+    border-radius: 6px 6px 0px 0px
+}
+.basic-plan tr td:nth-child(2),
+.premium-plan tr td:nth-child(3){
+  background-color: #121C4D;
+  color: white;
+
+}
+.basic-plan tr td:nth-child(2) span.plan-check ,
+.premium-plan tr td:nth-child(3)  span.plan-check{
+  background-image: url(./../images/check-icon-b.png);
 }

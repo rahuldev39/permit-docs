@@ -151,25 +151,29 @@
 
               <div class="card">
                 <div class="table-responsive text-center">
-                  <table class="table">
+                  <table class="plan-table table premium-plan">
                     <tbody>
                       <tr class="billing-header">
                         <td></td>
                         <td width="200">
-                          <div class="basic-tab text-white">Basic</div>
+                          <div class="paln-tab basic-tab text-white">Basic</div>
                         </td>
-                        <td class="bg-dark text-white" width="200">Premium</td>
+                        <td  width="200">
+                          <div class="paln-tab premium-tab text-white">
+                            Premium
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <td class="text-right">Property Search</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <img src="./images/checkbox-check.png" alt="" width="33">
+                          <span class="plan-check"></span>
                         </div>
                         </td>
-                        <td class="bg-dark text-white">
+                        <td class="">
                           <div class="billing-border-bottom">
-                            <img src="./images/check-icon-b.png" alt="" width="33">
+                            <span class="plan-check"></span>
                           </div>
                         </td>
                       </tr>
@@ -177,12 +181,12 @@
                         <td class="text-right">Code Search</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <img src="./images/checkbox-check.png" alt="" width="33">
+                          <span class="plan-check"></span>
                         </div>
                         </td>
-                        <td class="bg-dark text-white">
+                        <td class="">
                           <div class="billing-border-bottom">
-                            <img src="./images/check-icon-b.png" alt="" width="33">
+                            <span class="plan-check"></span>
                           </div>
                         </td>
                       </tr>
@@ -190,12 +194,12 @@
                         <td class="text-right">Projects</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <img src="./images/checkbox-check.png" alt="" width="33">
+                          <span class="plan-check"></span>
                         </div>
                         </td>
-                        <td class="bg-dark text-white">
+                        <td class="">
                           <div class="billing-border-bottom">
-                            <img src="./images/check-icon-b.png" alt="" width="33">
+                            <span class="plan-check"></span>
                           </div>
                         </td>
                       </tr>
@@ -203,12 +207,12 @@
                         <td class="text-right">Collaborate</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <img src="./images/checkbox-check.png" alt="" width="33">
+                          <span class="plan-check"></span>
                         </div>
                         </td>
-                        <td class="bg-dark text-white">
+                        <td class="">
                           <div class="billing-border-bottom">
-                            <img src="./images/check-icon-b.png" alt="" width="33">
+                            <span class="plan-check"></span>
                           </div>
                         </td>
                       </tr>
@@ -216,12 +220,12 @@
                         <td class="text-right">Notes</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <img src="./images/checkbox-check.png" alt="" width="33">
+                          <span class="plan-check"></span>
                         </div>
                         </td>
-                        <td class="bg-dark text-white">
+                        <td class="">
                           <div class="billing-border-bottom">
-                            <img src="./images/check-icon-b.png" alt="" width="33">
+                            <span class="plan-check"></span>
                           </div>
                         </td>
                       </tr>
@@ -237,7 +241,7 @@
                             </div>
                           </div>
                         </td>
-                        <td class="bg-dark text-white text-left">
+                        <td class=" text-left">
                           <div class="d-flex billing-border-bottom">
                             <h4 class="f-32 mr-2">$150</h4>
                             <div class="f-14">
@@ -254,7 +258,7 @@
 
                           </div>
                         </td>
-                        <td class="bg-dark text-white text-left">
+                        <td class="text-left">
                           <div class="d-flex billing-border-bottom">
                             <h4 class="f-32 mr-2">$130</h4>
                             <div class="f-14">
@@ -271,7 +275,7 @@
 
                           </div>
                         </td>
-                        <td class="bg-dark text-white text-left ">
+                        <td class="text-left ">
                           <div class="d-flex billing-border-bottom">
                             <h4 class="f-32 mr-2">$110</h4>
                             <div class="f-14">
@@ -286,7 +290,7 @@
                         <td class="text-left"><div class="billing-border-bottom">
 
                         </div></td>
-                        <td class="bg-dark text-white text-left">
+                        <td class="text-left">
                           <div class="d-flex billing-border-bottom">
                             <h4 class="f-32 mr-2">$90</h4>
                             <div class="f-14">
@@ -299,7 +303,7 @@
                       <tr>
                         <td class="text-right">21+ User Pricing</td>
                         <td class="text-left"></td>
-                        <td class="bg-dark text-white text-center f-22">
+                        <td class=" text-center f-22">
                           <div class="py-4 my-3">
                             Call for Pricing
                           </div>
@@ -499,6 +503,19 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./js/dropdown.js"></script>
+
+
+  <script type="text/javascript">
+    $('.billing-header .paln-tab').on('click', function() {
+      if($(this).hasClass('basic-tab')){
+        $('.plan-table').addClass('basic-plan').removeClass('premium-plan');
+      }
+      else {
+        $('.plan-table').removeClass('basic-plan').addClass('premium-plan');
+      }
+    })
+  </script>
+
 </body>
 
 </html>
