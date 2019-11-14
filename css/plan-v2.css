@@ -63,12 +63,11 @@ table th:last-child{
 .table tbody tr:last-child{
   border-bottom: 1px solid #bcc1cf;
 }
-.table-head{
-  border-radius: 5px 5px 0 0;
-  background-color: #121C4D;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
-  padding: 15px 25px
-
+.table-head {
+    border-radius: 5px 5px 0 0;
+    background-color: #2F2E41;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+    padding: 15px 25px;
 }
 .table-head h4{
   color: #FFFFFF;
@@ -108,12 +107,11 @@ tr.billing-header td{
   background-size: 33px;
   background-position: center;
 }
-
-.billing-details .card{
-  overflow: hidden;
-  border: 0px !important;
-  box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
-  border-radius: 10px
+.billing-details .card, .card.premium-pricing-card {
+    overflow: hidden;
+    border: 0px !important;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
 }
 .billing-border-bottom{
   padding: 20px 0px;
@@ -129,10 +127,16 @@ tr.billing-header td{
   right: 10px;
   margin: 0 auto;
 }
+.plan-table tr:last-child .billing-border-bottom{
+  padding-bottom: 40px
+}
+.plan-table tr:last-child .billing-border-bottom::after{
+  visibility: hidden;
+}
 .billing-details {
   font-weight: 600 !important;
 }
-.billing-details h4{
+.billing-details h4 , .premium-pricing-card h4{
   font-weight: 700 !important;
 }
 .subscription-block .card label{
@@ -153,16 +157,16 @@ tr.billing-header td{
   position: absolute;
   left: 25px
 }
-.subscription-block .card label input[type="radio"]:checked + .plan-type::before{
-  background-image: url(./../images/check-icon-b.png);
-  background-color: #6C97D9;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
+.subscription-block .card label input[type="radio"]:checked + .plan-type::before {
+    background-image: url(./../images/check-icon-b.png);
+    background-color: #35d697;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .subscription-price{
   padding: 0px 15px;
-  background-color: #DEE3EC;
+  background-color: #3F3D56;
   min-height: 110px
 }
 .subscription-price h4{
@@ -171,14 +175,17 @@ tr.billing-header td{
 .dollar{
   top: 5px
 }
-
-.subscription-block .card label input[type="radio"]:checked + .plan-type{
-  background-color: #121C4D;
-  color: white
+.subscription-price span:not(.dollar){
+  opacity: .5;
 }
-.subscription-form label{
-  font-weight: 700;
-  margin-bottom: 10px
+.subscription-block .card label input[type="radio"]:checked + .plan-type{
+  background-color: rgba(52, 214, 151, 0.11);
+}
+.subscription-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #232323;
+    opacity: 0.5;
 }
 .monthly-pricing-summary{
   border: 1px solid #121C4D;
@@ -187,30 +194,37 @@ tr.billing-header td{
   padding: 20px;
   font-weight: 700;
 }
-.monthly-pricing-summary h1{
-  font-size: 100px;
-
+.monthly-pricing-summary h1, .premium-pricing-item h1 {
+    font-size: 100px;
+    font-family: 'Heebo', sans-serif;
+    line-height: 95px;
 }
-.monthly-pricing-summary h1 .dollar {
-    top: 24px;
+.monthly-pricing-summary h1 .dollar, .premium-pricing-item h1 .dollar {
+    line-height: 37px;
 }
 
 
 .billing-header .paln-tab{
   cursor: pointer;
+  background-color: #34D697;
+  border-radius: 6px 6px 0px 0px;
 }
-.premium-plan .paln-tab:not(.premium-tab) ,
+.premium-plan .paln-tab:not(.premium-tab),
 .basic-plan .paln-tab:not(.basic-tab) {
-  	background-color: #6C97D9;
-    border-radius: 6px 6px 0px 0px
-}
-.basic-plan tr td:nth-child(2),
-.premium-plan tr td:nth-child(3){
-  background-color: #121C4D;
-  color: white;
+    background-color: #2F2E41;
 
 }
-.basic-plan tr td:nth-child(2) span.plan-check ,
-.premium-plan tr td:nth-child(3)  span.plan-check{
-  background-image: url(./../images/check-icon-b.png);
+.basic-plan tr td:nth-child(2),
+.premium-plan tr td:nth-child(3) {
+    background-color: rgba(52, 214, 151, 0.11);
+    color: white;
+}
+.premium-pricing-item > span{
+  font-weight: bold;
+  color: #232323;
+  line-height: 40px
+}
+.premium-pricing-card h4 {
+    font-family: 'Heebo', sans-serif;
+    line-height: 40px;
 }

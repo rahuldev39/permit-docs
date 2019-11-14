@@ -13,12 +13,14 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,400i,500,500i,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <link href="./css/modal.css" rel="stylesheet">
   <link href="./css/plan-v2.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="fonts-v2">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light static-top navbar-v2">
@@ -141,7 +143,7 @@
       <div class="page-header property-search-header pt-4 mt-2">
         <h2>Billing</h2>
       </div>
-      <div class="page-content">
+      <div class="page-content ">
         <div class="row billing-details">
             <div class="col-md-6">
               <div class="billing-details-header text-dark mb-4 pb-2">
@@ -194,7 +196,7 @@
                         <td class="text-right">Projects</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <span class="plan-check"></span>
+
                         </div>
                         </td>
                         <td class="">
@@ -207,7 +209,7 @@
                         <td class="text-right">Collaborate</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <span class="plan-check"></span>
+
                         </div>
                         </td>
                         <td class="">
@@ -220,7 +222,7 @@
                         <td class="text-right">Notes</td>
                         <td>
                         <div class="billing-border-bottom">
-                          <span class="plan-check"></span>
+
                         </div>
                         </td>
                         <td class="">
@@ -229,86 +231,7 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
-                        <td class="text-right">1 User Pricing</td>
 
-                        <td class="text-left">
-                          <div class="d-flex billing-border-bottom">
-                            <h4 class="f-32 mr-2">$75</h4>
-                            <div class="f-14">
-                              <span class="d-block">Per User</span>
-                              <span class="d-block">Per Month</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class=" text-left">
-                          <div class="d-flex billing-border-bottom">
-                            <h4 class="f-32 mr-2">$150</h4>
-                            <div class="f-14">
-                              <span class="d-block">Per User</span>
-                              <span class="d-block">Per Month</span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-right">2-5 User Pricing</td>
-                        <td class="text-left">
-                          <div class="billing-border-bottom">
-
-                          </div>
-                        </td>
-                        <td class="text-left">
-                          <div class="d-flex billing-border-bottom">
-                            <h4 class="f-32 mr-2">$130</h4>
-                            <div class="f-14">
-                              <span class="d-block">Per User</span>
-                              <span class="d-block">Per Month</span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-right">6-10 User Pricing</td>
-                        <td class="text-left ">
-                          <div class="billing-border-bottom">
-
-                          </div>
-                        </td>
-                        <td class="text-left ">
-                          <div class="d-flex billing-border-bottom">
-                            <h4 class="f-32 mr-2">$110</h4>
-                            <div class="f-14">
-                              <span class="d-block">Per User</span>
-                              <span class="d-block">Per Month</span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-right">11-20 User Pricing</td>
-                        <td class="text-left"><div class="billing-border-bottom">
-
-                        </div></td>
-                        <td class="text-left">
-                          <div class="d-flex billing-border-bottom">
-                            <h4 class="f-32 mr-2">$90</h4>
-                            <div class="f-14">
-                              <span class="d-block">Per User</span>
-                              <span class="d-block">Per Month</span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text-right">21+ User Pricing</td>
-                        <td class="text-left"></td>
-                        <td class=" text-center f-22">
-                          <div class="py-4 my-3">
-                            Call for Pricing
-                          </div>
-                        </td>
-                      </tr>
                     </tbody>
 
                   </table>
@@ -337,7 +260,7 @@
                       1 User
                     </div>
                   </div>
-                  <div class="subscription-price d-flex align-items-center">
+                  <div class="subscription-price d-flex align-items-center text-white">
                     <div class="d-flex ">
                       <h4 class="f-38 mr-2 mb-0"><span class="f-22 align-top position-relative dollar">$</span>75</h4>
                       <div class="f-16 align-self-end">
@@ -353,12 +276,15 @@
                   <input class="d-none" type="radio" name="Subscription" value="" checked>
                   <div class="plan-type f-22 flex-fill d-flex align-items-center justify-content-between">
                     Premium
+                    <div class="user-conut">
+                      10 Users
+                    </div>
                   </div>
-                  <div class="subscription-price d-flex align-items-center flex-wrap">
+                  <div class="subscription-price d-flex align-items-center flex-wrap text-white">
 
                     <div class="d-flex">
-                      <h4 class="f-38 mr-2  mb-0"><span class="f-22 align-top position-relative dollar">$</span>150</h4>
-                      <div class="f-16 align-self-end">
+                      <h4 class="f-38 mr-2  mb-0 text-white"><span class="f-22 align-top position-relative dollar">$</span>110</h4>
+                      <div class="f-16 align-self-end ">
                         <span class="d-block">Per User</span>
                         <span class="d-block">Per Month</span>
                       </div>
@@ -371,7 +297,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="subscription-form text-dark">
-                    <div class="form-group mb-4">
+                    <div class="form-group mb-3">
                       <label>Total Number of Users</label>
                       <input type="text" class="form-control" value="10" placeholder="">
                     </div>
@@ -379,13 +305,13 @@
                       <label>Coupon Code</label>
                       <input type="text" class="form-control"  placeholder="">
                     </div>
-                    <button type="button" class="btn btn-primary btn-block">
+                    <button type="button" class="btn btn-dark btn-block">
                       Subscribe
                     </button>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="monthly-pricing-summary text-center h-100 d-flex flex-column text-dark">
+                  <div class="monthly-pricing-summary text-center h-100 d-flex flex-column">
                     <span>Monthly Pricing Summary</span>
                     <h1 class="my-auto font-weight-bold"><span class="dollar position-relative f-28  align-top">$</span>660</h1>
                     <span>Current Rate: $110 Per User</span>
@@ -395,6 +321,48 @@
               </div>
 
             </div>
+        </div>
+          <div class="spacer"></div>
+
+        <div class="card  premium-pricing-card text-center">
+          <div class="card-body p-4">
+            <h4 class="mb-4 f-28">Premium Pricing</h4>
+
+            <div class="row mb-4">
+              <div class="col-md-3 col-sm-6">
+                <div class="premium-pricing-item">
+                  <span class="f-22 d-block mb-2">1 User</span>
+                  <h1 class="font-weight-bold mb-2"><span class="dollar position-relative f-28  align-top">$</span>150</h1>
+                  <span class="f-18 o-5 d-block">Per User Per Month</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="premium-pricing-item">
+                  <span class="f-22 d-block mb-2">2-5 Users</span>
+                  <h1 class="font-weight-bold mb-2"><span class="dollar position-relative f-28  align-top">$</span>130</h1>
+                  <span class="f-18 o-5 d-block">Per User Per Month</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="premium-pricing-item">
+                  <span class="f-22 d-block mb-2">6-10 Users</span>
+                  <h1 class="font-weight-bold mb-2"><span class="dollar position-relative f-28  align-top">$</span>110</h1>
+                  <span class="f-18 o-5 d-block">Per User Per Month</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="premium-pricing-item">
+                  <span class="f-22 d-block mb-2">11-20 Users</span>
+                  <h1 class="font-weight-bold mb-2"><span class="dollar position-relative f-28  align-top">$</span>90</h1>
+                  <span class="f-18 o-5 d-block">Per User Per Month</span>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="call-for f-28 o-5">Call for Pricing for 21+ Users</h4>
+
+          </div>
+
         </div>
 
         <div class="spacer"></div>
@@ -453,7 +421,7 @@
         </div>
         <div class="spacer"></div>
         <div class="btn-container">
-          <button class="btn btn-primary edit-pay-btn">Edit Payment Method</button>
+          <button class="btn btn-dark edit-pay-btn">Edit Payment Method</button>
         </div>
         <div class="spacer"></div>
           </div>
