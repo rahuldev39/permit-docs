@@ -121,3 +121,44 @@
   font-weight: bold;
   text-align: center;
 }
+
+
+
+/*##############-------Property Chat Css Start------#################*/
+.chat-box{
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-bottom: 40px
+}
+.chat-box .chat-content{
+  max-width: 90%;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 6px
+}
+.chat-box .chat-user {
+    position: absolute;
+    top: 0px;
+}
+.chat-box.left .chat-content{
+  padding-left: 78px;
+  background-color: #EEEEEE;
+}
+.chat-box.right .chat-content{
+  padding-right: 78px;
+  background-color: #DADADA;
+}
+.chat-box.left .chat-user {
+    left: 0px;
+    margin-left: -28px;
+}
+.chat-box.right .chat-user {
+    right: 0px;
+    margin-right: -28px;
+}
+.chat-info{
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px
+}
+/*##############-------Property Chat Css End------#################*/
